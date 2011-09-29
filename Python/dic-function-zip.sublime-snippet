@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:adic} = dict(zip(${2:iterable with keys}, ${3:iterable with values}))
+]]>
+</content>
+	<tabTrigger>dic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+<content>
+<![CDATA[
+# An iterable object can be iterated over multiple times 
+# -a sequence such as list, tuple, string etc
+# -a mapping such as Disctionary
+# -s set
+
+# An iterator object can only be iterated over once using next().
+# Get iterator for a Sequence using iter() function.
+
+# A generator is a function/expression that creates, or generates, an iterator.
+# Generator function: Uses yield in function call
+# Generator expression: list comprehension with ()
+# Every generator is an iterator, but not vice versa.
+# A Generator returns a generator object which follows iterator protocol.
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

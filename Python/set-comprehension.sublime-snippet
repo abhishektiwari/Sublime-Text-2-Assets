@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+{${1:expression} for ${2:expr1} in ${3:iterable1} ${4:if ${5:condition1}}
+		 ${6:for ${7:expr1} in ${8:iterable2} ${10:if ${11:condition1}}}}
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

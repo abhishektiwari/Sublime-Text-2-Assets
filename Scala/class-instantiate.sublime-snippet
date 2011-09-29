@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+new ${1:ClassName}${2:(${3:val}${4:, ${5:val}})}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

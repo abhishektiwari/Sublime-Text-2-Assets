@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+import scala.${1:util}.${2:parsing}.${3:json}.{${4:JSON} => ${5:JsonParser}}
+]]>
+</content>
+	<tabTrigger>import</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

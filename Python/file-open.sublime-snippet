@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+${1:file_object} = open('${2:/path/file_name}', '${3:r|w|a|rb|wb}')
+$4
+${1:file_object}.close()
+]]>
+</content>
+	<tabTrigger>file</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

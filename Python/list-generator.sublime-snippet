@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:iterator} = (${2:expression} for ${3:expr} in ${4:iterable} ${5:if condi})
+${1:iterator}.next()
+]]>
+</content>
+	<tabTrigger>iterator</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

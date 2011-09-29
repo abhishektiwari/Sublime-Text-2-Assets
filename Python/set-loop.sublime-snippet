@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+for ${1:X} in ${2:aset}:
+	$0
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

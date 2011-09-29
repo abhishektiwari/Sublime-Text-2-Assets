@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+[${1:expression} for ${2:expr1} in ${3:Sequence1} ${4:if ${5:condition1}}
+		 ${6:for ${7:expr2} in ${8:Sequence2} ${10:if ${11:condition2}}}]
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

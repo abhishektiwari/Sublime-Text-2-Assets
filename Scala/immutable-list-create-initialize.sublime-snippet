@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+val ${1:listName}: List[${2:type}] = List(${3:elm1}, ${4:elm2}${5:, ${6:elm3}})
+]]>
+</content>
+	<tabTrigger>list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

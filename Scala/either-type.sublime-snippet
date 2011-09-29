@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+Either [${1:type}, ${2:type}]
+}
+]]>
+</content>
+	<tabTrigger>type</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

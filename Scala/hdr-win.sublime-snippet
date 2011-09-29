@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+::#!
+@echo off
+call scala %0 %*
+goto :eof
+::!#
+$1
+]]>
+</content>
+	<tabTrigger>hdr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

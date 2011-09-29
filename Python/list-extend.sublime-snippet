@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:alist}.extend(${2:iterable})
+]]>
+</content>
+	<tabTrigger>list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>append iterable at the end</description>
+</snippet>

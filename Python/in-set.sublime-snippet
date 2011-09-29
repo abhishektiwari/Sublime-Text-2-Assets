@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:X} in ${2:Set}
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

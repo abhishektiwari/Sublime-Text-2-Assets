@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+val ${1:arrayName}: Array[${2:type}] = new Array[${2:type}](${3:size})
+]]>
+</content>
+	<tabTrigger>array</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

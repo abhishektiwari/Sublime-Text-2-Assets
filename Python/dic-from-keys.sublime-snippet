@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:adict}.fromkeys(${2:seq}${3:, ${4:value}})
+
+]]>
+</content>
+	<tabTrigger>dic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

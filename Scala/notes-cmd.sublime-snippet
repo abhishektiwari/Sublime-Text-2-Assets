@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+/*
+Command line arguments to a Scala script are available via a Scala array
+named args you access an element by specifying an index in parentheses()
+*/
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

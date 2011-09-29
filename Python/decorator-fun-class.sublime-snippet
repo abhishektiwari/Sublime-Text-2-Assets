@@ -1,0 +1,16 @@
+<snippet>
+<content>
+<![CDATA[
+def decorator(${1:cls}):
+	class Wrapper:
+		def __init__(self, *args, **kwargs):
+			self.wrapped = ${1:cls}(*args, **kwargs)
+		${2: Use function to manipulate self.wrapped and return something}
+	return Wrapper
+]]>
+</content>
+	<tabTrigger>decorator</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Function as Class Decorator</description>
+</snippet>

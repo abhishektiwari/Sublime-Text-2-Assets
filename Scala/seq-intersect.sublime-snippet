@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+val ${1:seqName} = ${2:seq1} intersect ${3:seq2}
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

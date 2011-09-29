@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+for (
+	${1:element1} <- ${2:collection1}
+	${3:if ${4: condition-1 using element1}};
+	${5:${6:element2} <- ${7:collection2}}
+	${8:if ${9: condition-2 using element2}};
+	) {
+		$0	
+	}
+]]>
+</content>
+	<tabTrigger>for</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

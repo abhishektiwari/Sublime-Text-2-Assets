@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+private val ${1:varname} = ${2:val}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

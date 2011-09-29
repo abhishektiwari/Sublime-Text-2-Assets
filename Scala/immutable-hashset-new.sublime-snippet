@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+import scala.collection.immutable.HashSet
+${1:var} ${2:setName} = new HashSet[${3:type}]()
+${2:setName} += ${4:new element}
+$5
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

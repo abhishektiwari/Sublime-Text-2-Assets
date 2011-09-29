@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:alist}.append(${2:x})
+]]>
+</content>
+	<tabTrigger>list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>append x at the end</description>
+</snippet>

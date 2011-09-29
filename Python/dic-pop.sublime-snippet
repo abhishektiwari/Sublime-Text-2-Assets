@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:adict}.pop(${2:key}${3:, ${4:default}})
+]]>
+</content>
+	<tabTrigger>dic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

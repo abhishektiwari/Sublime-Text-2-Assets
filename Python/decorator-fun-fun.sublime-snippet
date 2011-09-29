@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+def ${1:decorator}(${2:myfun}):
+	def wrapper(*args, **kwargs): 
+		# Use ${2:myfun}, args, kwargs
+		# ${2:myfun}(*args, **kwargs) calls original function
+		$3
+		return $4
+	return wrapper
+]]>
+</content>
+	<tabTrigger>decorator</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Function as Function Decorator</description>
+</snippet>

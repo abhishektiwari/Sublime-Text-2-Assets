@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:val} ${2:new_collection} = for (${3:element} <- ${4:collection}) yield ${5:body}
+]]>
+</content>
+	<tabTrigger>for</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

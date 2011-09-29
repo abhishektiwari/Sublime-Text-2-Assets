@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:dict1}.update(${2:dict2})
+]]>
+</content>
+	<tabTrigger>dic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>Merge two dic</description>
+</snippet>

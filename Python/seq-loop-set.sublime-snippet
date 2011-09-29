@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+for ${1:X} in sorted(set(${2:Sequence})):
+	$3
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

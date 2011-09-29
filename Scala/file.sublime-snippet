@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+val ${1:source} = scala.io.Source.fromFile(${2:file}${3:,"${4:utf-8}"})
+val ${5:lines} = ${1:source} getLines
+${1:source}.close ()
+]]>
+</content>
+	<tabTrigger>file</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

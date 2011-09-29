@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+enumerate(${1:iterable or iterator}${2:, start=${3:0}})
+# Use for loop or next or list to see index and value
+]]>
+</content>
+	<tabTrigger>enum</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:atuple}.count(${2:X})
+# number of occurrences of x in atuple
+]]>
+</content>
+	<tabTrigger>tuple</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

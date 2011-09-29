@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+for ${1:index}, ${2:value} in enumerate(${3:Sequence}):
+	$4
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

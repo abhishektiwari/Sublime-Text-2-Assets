@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+dict((${1:x-expr1}, ${2:x-expr2}) for ${3:x} in ${5:iterable})
+]]>
+</content>
+	<tabTrigger>dic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

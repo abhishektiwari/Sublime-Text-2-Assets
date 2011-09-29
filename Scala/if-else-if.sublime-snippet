@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+if (${1:expression}) {
+	${2:}
+}
+else if {
+	${3:}
+}
+else {
+	${4:}
+}
+]]>
+</content>
+	<tabTrigger>if</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:lower} until ${2:upper} by ${3:+/- step size}
+]]>
+</content>
+	<tabTrigger>range</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

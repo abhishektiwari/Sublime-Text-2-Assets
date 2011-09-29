@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def ${1:function}($2, $3):
+	${4}
+	yield ${5:expression}
+
+${6:iterator} = ${1:function}($7, $8)
+${6:iterator}.next()
+]]>
+</content>
+	<tabTrigger>iterator</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

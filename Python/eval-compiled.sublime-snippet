@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+eval(${1:compiled code object from compile function})
+]]>
+</content>
+	<tabTrigger>eval</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

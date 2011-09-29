@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+for (${1:i} <- ${2:lower} until ${3:upper})
+]]>
+</content>
+	<tabTrigger>for</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

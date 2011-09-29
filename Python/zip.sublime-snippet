@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+zip(${1:iterable}, ${2:iterable2} ${3:, ${4:iterable2}})
+]]>
+</content>
+	<tabTrigger>zip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>zip the iterables</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:expr1} if ${2:cond} else ${3:expr2}
+]]>
+</content>
+	<tabTrigger>ternary</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

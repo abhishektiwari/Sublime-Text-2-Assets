@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ClassName} extends ${2:OtherClassTrait} with ${3:TraitName} ${4:with ${5:OtherTraitName}}{
+	${0}
+}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>extends with trait</description>
+</snippet>

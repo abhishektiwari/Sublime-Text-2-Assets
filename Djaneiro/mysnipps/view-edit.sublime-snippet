@@ -1,0 +1,44 @@
+<snippet>
+<content>
+<![CDATA[
+@login_required
+def edit(request, ${1:object}_id=None):
+	$1 = None
+	# This part is used to check user's edit permissions
+	if $1_id is not None:
+		$1_temp = get_object_or_404(${2:ModelName}, pk = $1_id)
+        if ${3:permission test}:
+        	"Check user permission on $1_temp and assign it to $1"
+			$1 = $1_temp
+		else:
+			"Redirect the unauthorized user to appropriate view/url"
+			return redirect('${4:view_name}')
+	# This part work for both creating and editing object
+	if request.method == 'POST':
+		"""
+		Create a form instance with POST data. **kwargs should be popped in form __init__ method
+		"""
+		form = $2Form(request.POST${5:,request.FILES}, instance = $1${6:,${7:**kwargs}})
+		if form.is_valid():
+			"Create a new_$1 object from the form's data"
+			new_$1 = form.save(commit=False)
+			# Modify the new_$1's model fields
+			$8
+			# Save the new_$1 object
+			new_$1.save()
+            
+			# For any many-to-many relation object
+			${9:#form.save_m2m()}
+
+			# Redirect to some view, normally using get_absolute_url
+			return HttpResponseRedirect(new_$1.get_absolute_url())
+	else:
+		form = $2Form(instance=$1)
+	# Return Render to response
+	$10
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view edit</description>
+</snippet>

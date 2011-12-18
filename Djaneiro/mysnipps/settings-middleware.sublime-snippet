@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+'guardian.backends.ObjectPermissionBackend',
+'pagination.middleware.PaginationMiddleware',
+'django.middleware.transaction.TransactionMiddleware',
+]]>
+</content>
+    <tabTrigger>setting</tabTrigger>
+    <scope>source.python</scope>
+    <description>middleware</description>
+</snippet>

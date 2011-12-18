@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:my_stack}.push(${2:val1},${3:val2},${4:...})
+]]>
+</content>
+	<tabTrigger>stack</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

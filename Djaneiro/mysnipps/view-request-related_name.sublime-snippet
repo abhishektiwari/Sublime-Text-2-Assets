@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+request.user.${1:related_name}.${2:get/all}()
+# user is fk in $1 object model 
+]]>
+</content>
+    <tabTrigger>request</tabTrigger>
+    <scope>source.python</scope>
+    <description>request user related_name</description>
+</snippet>

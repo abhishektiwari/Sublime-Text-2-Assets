@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+truncatewords_html:${1:2}
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter truncatewords_html</description>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# Model imports}
+
+class UserProfile(models.Model):
+	"""
+	Please add AUTH_PROFILE_MODULE = "$2.UserProfile"
+	where ${2:accounts} is app name. 
+	Reference a users profile as user.get_profile()
+	"""
+	# This field is required.
+	user = models.OneToOneField(User)
+	
+	# Other fields here
+
+
+def create_user_profile(sender, instance, created, **kwargs):
+	if created:
+		UserProfile.objects.create(user=instance)
+
+# from django.db.models.signals import post_save
+post_save.connect(create_user_profile, sender=User)
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model UserProfile</description>
+</snippet>

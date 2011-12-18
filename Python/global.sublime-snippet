@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+global ${1:name}${2:, ${3:name}}
+]]>
+</content>
+	<tabTrigger>global</tabTrigger>
+	<scope>source.python</scope>
+	<description>global</description>
+</snippet>

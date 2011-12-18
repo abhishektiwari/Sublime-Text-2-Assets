@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+login(request, ${1:user})
+# login only after authenticate and redirect to a success page
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>user login</description>
+</snippet>

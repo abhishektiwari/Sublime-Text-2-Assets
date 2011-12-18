@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.expanduser(${1:path})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>expanduser</description>
+</snippet>

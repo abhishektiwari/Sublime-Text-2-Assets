@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+re.I | re.L | re.M | re.S | re.A | re.X
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re flags</description>
+</snippet>

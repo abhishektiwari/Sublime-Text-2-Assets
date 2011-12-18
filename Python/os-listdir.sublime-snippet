@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.listdir(${1:path})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>list dir</description>
+</snippet>

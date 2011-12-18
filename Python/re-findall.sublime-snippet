@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_list} = re.findall(${2:pattern}, ${3:string}${4:, flags=0})
+${5:# return list of strings or groups for nonoverlapping}
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re findall</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+json.loads(${1:json/string})
+]]>
+</content>
+	<tabTrigger>json</tabTrigger>
+	<scope>source.python</scope>
+	<description>loads</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __reversed__(self):
+	"""
+	Called if defined by the reversed() built-in function to
+	implement custom reverse iteration.
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>seq __reversed__</description>
+</snippet>

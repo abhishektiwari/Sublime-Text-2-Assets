@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.walk(${1:path}, ${2:visit_function}, ${3:arg})
+${4:#Calls the visit_function(arg, dirname, filenames) for each directory }
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path walk</description>
+</snippet>

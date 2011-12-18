@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_strings} = re.split(${2:pattern}, ${3:string}${4:, flags=0}${5:, maxsplit=0})
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re split</description>
+</snippet>

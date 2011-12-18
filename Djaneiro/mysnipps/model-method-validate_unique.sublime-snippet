@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+def validate_unique(self, exclude=${1:None})
+	"""
+	Validates all uniqueness constraints on model instead of individual field values
+    """
+    pass
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-validate_unique</description>
+</snippet>

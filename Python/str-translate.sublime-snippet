@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.translate(${2:transtable})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Translate</description>
+</snippet>

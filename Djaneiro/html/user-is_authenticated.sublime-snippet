@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+user.is_authenticated
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>is_authenticated</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+sys.argv
+${1:list of arguments passed to a Python script. argv[0] is the script}
+]]>
+</content>
+	<tabTrigger>sys</tabTrigger>
+	<scope>source.python</scope>
+	<description>argv</description>
+</snippet>

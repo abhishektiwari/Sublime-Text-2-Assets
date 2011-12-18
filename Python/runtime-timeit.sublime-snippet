@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+import timeit
+timeit.timeit("x=${1:expression}")
+]]>
+</content>
+	<tabTrigger>runtime</tabTrigger>
+	<scope>source.python</scope>
+	<description>Timeit</description>
+</snippet>

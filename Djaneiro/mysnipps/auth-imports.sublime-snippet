@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>auth-imports</description>
+</snippet>

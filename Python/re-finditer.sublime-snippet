@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object} = re.finditer(${2:pattern}, ${3:string}${4:, flags=0})
+${5:# returns a MatchObject iterator over all nonoverlapping matches}
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re finditer</description>
+</snippet>

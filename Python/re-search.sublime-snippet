@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object} = re.search(${2:pattern}, ${3:string}${4:, flags=0})
+${5:# scans through string, return MatchObject or None}
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re search</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:method1}(${2:_}).andThen(${3:method2}(${4:_}))
+# $3($1($2))
+]]>
+</content>
+	<tabTrigger>def</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

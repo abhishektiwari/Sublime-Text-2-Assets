@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+from ${1:your_app} import signals
+signals.${2:my_signal}.send(sender=${3:None}, ${4:arg1}=${5:val1}, ${6:arg2}=${7:val2})
+]]>
+</content>
+    <tabTrigger>signal</tabTrigger>
+    <scope>source.python</scope>
+    <description>signal send</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:X} ${2:>} ${3:Y} ${4:<} ${5:Z}
+]]>
+</content>
+	<tabTrigger>chain</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

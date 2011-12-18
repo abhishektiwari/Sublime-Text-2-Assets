@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:import scala.collection.mutable.Set}
+${2:val} ${3:setName} = Set(${4:elm1}, ${5:elm2}${6:, ${7:elm3}})
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

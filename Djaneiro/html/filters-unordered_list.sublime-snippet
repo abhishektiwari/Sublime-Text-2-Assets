@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+unordered_list
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter unordered_list</description>
+</snippet>

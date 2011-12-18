@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+del ${1:name}
+]]>
+</content>
+	<tabTrigger>del</tabTrigger>
+	<scope>source.python</scope>
+	<description>del name</description>
+</snippet>

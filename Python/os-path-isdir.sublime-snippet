@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.isdir(${1:path})
+${2:# can get path using os.getcwd}
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path is dir</description>
+</snippet>

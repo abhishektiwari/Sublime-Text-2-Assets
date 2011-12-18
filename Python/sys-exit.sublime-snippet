@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+sys.exit(${1:arg})
+]]>
+</content>
+	<tabTrigger>sys</tabTrigger>
+	<scope>source.python</scope>
+	<description>exit</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+<form method="post" action=".">{% csrf_token %}
+	<fieldset>
+		$0
+	<input type="submit" class="btn primary" value="{% trans 'Push' %}"/>
+	</fieldset>
+</form>  
+]]> </content>
+    <tabTrigger>form</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>form</description>
+</snippet>

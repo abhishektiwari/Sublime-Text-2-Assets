@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+from string import maketrans
+trantable = maketrans(${1:intab}, ${2:outtab})
+# intab, outtab are string with same length
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Transtable</description>
+</snippet>

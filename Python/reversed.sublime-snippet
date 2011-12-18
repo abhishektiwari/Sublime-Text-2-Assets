@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:iterator} = reversed(${2:Sequence})
+${1:iterator}.next()
+]]>
+</content>
+	<tabTrigger>iterator</tabTrigger>
+	<scope>source.python</scope>
+	<description>reversed</description>
+</snippet>

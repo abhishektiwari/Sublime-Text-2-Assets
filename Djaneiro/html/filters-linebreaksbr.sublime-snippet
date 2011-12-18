@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+linebreaksbr
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter linebreaksbr</description>
+</snippet>

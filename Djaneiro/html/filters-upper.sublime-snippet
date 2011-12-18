@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+upper
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter upper</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[{% ${1:custom_simple_tag} ${2:arg1} ${3:arg2} ${4:...}%}
+]]>
+</content>
+    <tabTrigger>tag</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>custom tag</description>
+</snippet>

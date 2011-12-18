@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:FIELDNAME} = models.ImageField(upload_to=${2:image_file_path}, blank=${3:True})
+]]>
+</content>
+    <tabTrigger>mimg</tabTrigger>
+    <scope>source.python</scope>
+    <description>ImageField (mimg) Full</description>
+</snippet>

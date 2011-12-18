@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+messages
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>user messages</description>
+</snippet>

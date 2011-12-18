@@ -1,0 +1,23 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# Model imports}
+
+class UserProfile(models.Model):
+	"""
+	Please add AUTH_PROFILE_MODULE = "$2.UserProfile"
+	where ${2:accounts} is app name
+	reference a users profile as user.profile
+	"""
+	# This field is required.
+	user = models.ForeignKey(User, unique=True)
+	
+	# Other fields here
+
+User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model UserProfile</description>
+</snippet>

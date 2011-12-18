@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:setName1} intersect ${2:setName2}
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

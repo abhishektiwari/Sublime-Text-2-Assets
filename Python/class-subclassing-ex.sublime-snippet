@@ -1,0 +1,44 @@
+<snippet>
+<content>
+<![CDATA[
+class Mapping(object):
+    def __init__(self, iterable):
+      super(Mapping, self).__init__()
+        self.items_list = []
+        self.__update(iterable)
+
+    def update(self, iterable):
+        for item in iterable:
+            self.items_list.append(item)
+
+    __update = update   # private copy of original update() method
+
+class MappingSubclass(Mapping):
+    """
+    >>> from tclass import *
+    >>> a = [1,2,3,4]
+    >>> c1 = MappingSubclass(a)
+    >>> c1.items_list
+    [1, 2, 3, 4]
+    >>> c1.update(["c","d"],[7,8])
+    >>> c1.items_list
+    [1, 2, 3, 4, ('c', 7), ('d', 8)]
+    """
+    def __init__(self, args):
+        super(MappingSubclass, self).__init__(args)
+
+    def update(self, keys, values):
+        # provides new signature for update()
+        # but does not break __init__()
+        for item in zip(keys, values):
+            self.items_list.append(item)
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Private Var Methods</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ModelName}ListView(ListView):
+
+	context_object_name = "${2:model_name}_list"
+	queryset = ${3:query_set}
+	template_name = "$2_list.html"
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>Generic ListView Simple</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+timesince:${1:to_date}
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter timesince</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:randomGen}.nextBoolean()
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<scope>source.scala</scope>
+	<description>random-nextBoolean</description>
+</snippet>

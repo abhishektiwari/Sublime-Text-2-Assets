@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:alist} = range(${2:${3:start},}${4:stop}${5:,${6:step}})
+]]>
+</content>
+	<tabTrigger>list</tabTrigger>
+	<scope>source.python</scope>
+	<description>xrange</description>
+</snippet>

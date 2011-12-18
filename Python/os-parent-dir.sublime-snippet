@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.pardir
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>parent dir</description>
+</snippet>

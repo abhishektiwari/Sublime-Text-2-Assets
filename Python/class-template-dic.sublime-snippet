@@ -1,0 +1,58 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ClassName}(${2:object}):
+	"""
+	docstring for $1
+	"""
+	# Tracking a Class’s Instances
+	# Using Dictionary:
+	Instances = {}
+
+	# Fundamental Methods
+	def __init__(self${3:, ${4:arg1}, ${5:arg2}, ${6:...}}):
+		self._${7:key} = ${4}
+		self._${8:value} = ${5}
+		self.${9:ddata} = {}
+		# If it is derived class pass args to base class
+		super($1, self).__init__(${10:args})
+
+		# Using Dictionary
+		self.Instances[self._$7] = self
+
+	def __repr__(self):
+		return ${11:string used by the interpreter to print instances}
+
+	def __str__(self):
+		return ${12:string used by print and str}
+
+	# Predicates
+	def __lt__(self, ${13:other}):
+		if type(self) != type($13):
+			raise Exception(
+				'Incompatible argument to __lt__: ' + str($13))
+		return ${14:self.${15:somemethod}() < $13.${15:somemethod}()}
+
+	def is_some_${16:characteristic}(self):
+		return ${17:True or False}
+
+	# Access Methods
+	def get_$9_point(self):
+	""" Returning generator  not orginal"""
+		return (data_point for data_point in self.$9.keys())
+				
+	def add_$9(self, ${18:key}, ${19:value}):
+		self.$9[$18] = $19
+	
+	def remove_$9(self, ${20:key}):
+		del self.$9[$20]
+	
+	# Helper for predicates
+	def $15(self):
+		return ${22:}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Class Template Dic</description>
+</snippet>

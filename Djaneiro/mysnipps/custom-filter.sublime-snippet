@@ -1,0 +1,19 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# In /app/templatetags/ ther must be 
+# tags_filters_extras.py and __init__.py}
+${2:from django import template}
+${3:register = template.Library()}
+
+@register.filter
+def ${4:filter_name}(${5:value}, ${6:arg}):
+	""" $4 will be called like {% $4|$5:$6 %} """
+	$7
+	return ${8:something}
+]]>
+</content>
+    <tabTrigger>tags</tabTrigger>
+    <scope>source.python</scope>
+    <description>custom filter</description>
+</snippet>

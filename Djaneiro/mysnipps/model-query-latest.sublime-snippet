@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set} = ${2:ModelName}.objects.latest('${3:field_name}')
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-latest</description>
+</snippet>

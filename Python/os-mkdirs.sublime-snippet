@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+os.makedirs(${1:path}${2:, ${3:777}})
+${4:#Recursive directory-creation}
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>makedirs</description>
+</snippet>

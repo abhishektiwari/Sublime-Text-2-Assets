@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+length
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter length</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+random.normalvariate(${1:mu},${2:sigma})
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>random normalvariate</description>
+</snippet>

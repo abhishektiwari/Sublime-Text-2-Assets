@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.count(${2:substr}${3:,${4:start}}${5:,${6:end}})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Count</description>
+</snippet>

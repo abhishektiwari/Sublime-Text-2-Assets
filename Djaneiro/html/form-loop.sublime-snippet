@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+{% for field in form %}
+	<div class="clearfix">
+		{{ field.errors }}
+		{{ field.label_tag }}
+		<div class="input">
+			{{ field }}
+		</div>
+	</div>
+{% endfor %}
+]]> </content>
+    <tabTrigger>form</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>form loop</description>
+</snippet>

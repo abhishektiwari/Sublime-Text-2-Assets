@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+new ${1:ClassName}${2:(${3:val}${4:, ${5:val}})} with ${6:TraitName}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>instantiate with trait</description>
+</snippet>

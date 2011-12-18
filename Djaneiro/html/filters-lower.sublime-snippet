@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+lower
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter lower</description>
+</snippet>

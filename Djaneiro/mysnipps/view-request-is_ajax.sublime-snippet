@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+request.is_ajax()
+]]>
+</content>
+    <tabTrigger>request</tabTrigger>
+    <scope>source.python</scope>
+    <description>request user is_anonymous</description>
+</snippet>

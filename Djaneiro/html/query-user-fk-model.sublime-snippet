@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+request.user.${1:object}.get.${2:field}
+]]> 
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>user as fk in object</description>
+</snippet>

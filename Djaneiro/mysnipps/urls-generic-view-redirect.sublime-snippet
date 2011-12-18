@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+url(r'^${1:regex}\$', RedirectView.as_view(url="${2:/my/url/}", permanent=${3:False})),
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>RedirectView</description>
+</snippet>

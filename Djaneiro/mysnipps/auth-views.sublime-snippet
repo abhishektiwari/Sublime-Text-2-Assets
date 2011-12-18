@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+import django.contrib.auth.views to use following views:
+
+1. login, logout, logout_then_login
+2. password_change, password_change_done
+3. password_reset, password_reset_done
+4. password_reset_confirm, password_reset_complete
+5. redirect_to_login
+"""
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>auth in-built views</description>
+</snippet>

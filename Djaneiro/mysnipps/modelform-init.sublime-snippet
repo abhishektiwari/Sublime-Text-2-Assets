@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __init__(self, *args, **kwargs):
+	# Remove extra fields using kwargs.pop
+	${1:field} = kwargs.pop('${2:key}', None)
+	super(${3:ModelName}Form, self).__init__(*args, **kwargs)
+	# Initialize model field with popped items
+	self.$1 = $1
+]]>
+</content>
+    <tabTrigger>modelform</tabTrigger>
+    <scope>source.python</scope>
+    <description>ModelForm-init</description>
+</snippet>

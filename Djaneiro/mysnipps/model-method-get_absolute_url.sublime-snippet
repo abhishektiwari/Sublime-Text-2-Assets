@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+@models.permalink
+def get_absolute_url(self):
+	"""Calculate the URL for an object"""
+	return ('${1:app.views.function}', [str(self.${2:id})])
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-get_absolute_url</description>
+</snippet>

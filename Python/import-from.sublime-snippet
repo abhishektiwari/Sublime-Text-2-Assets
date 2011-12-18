@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+from ${1:module/package} import ${2:few things or *}
+]]>
+</content>
+	<tabTrigger>import</tabTrigger>
+	<scope>source.python</scope>
+	<description>From</description>
+</snippet>

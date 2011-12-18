@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:my_stack}.update(${2:index},${3:new_val})
+]]>
+</content>
+	<tabTrigger>stack</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

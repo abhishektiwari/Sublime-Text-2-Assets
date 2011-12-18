@@ -1,0 +1,16 @@
+<snippet>
+<content>
+<![CDATA[
+@property
+def ${1:property_name}(self):
+	"""
+	Create the property $1 and access it in view and template.
+	In template you can access like {{ object.$1 }}
+	"""
+	return ${2:something}
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-property</description>
+</snippet>

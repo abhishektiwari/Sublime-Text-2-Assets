@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+self.assertNotIsInstance(${1:obj}, ${2:cls}${3:, msg=${4:None}})
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>assertNotIsInstance(obj, cls)</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+resolvers += Classpaths.typesafeResolver
+
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse" % "1.6.0")
+
+]]>
+</content>
+	<tabTrigger>sbt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sbt</scope>
+</snippet>

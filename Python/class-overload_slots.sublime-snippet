@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+__slots__ = ${1: iterable or sequence of strings}
+# Reserves space for the declared attributes of instance of class
+
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all __slot__</description>
+</snippet>
+

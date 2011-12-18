@@ -1,0 +1,46 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+
+Defining kwargs:
+
+key1 = val1, key2 = val2, key3 = val3, ...
+
+
+
+Defining kwargs with Field Lookups:
+
+Same as kwargs but 
+	1. keys are model fields
+	2. keys appended by field lookup clause using double underscore    
+	   (field__lookupclause)
+
+Field Lookups 		Notes 				Example
+
+__exact 			case sensitive 		id__exact=14
+__iexact 			case insensitive 	f__iexact='abhi'
+__contains 			case sensitive 		f__contains = 'abhi'
+__icontains  		case insensitive    f__icontains = 'abhi'
+__in 				in a given list 	f__in = [1,2,3]
+__gt                                    id_gt = 14
+__gte                                   id_gte = 14
+__lt                                    id_lt = 14
+__lt                                    id_lte = 14
+__startswith 		case sensitive 		f__startswith='abhi'
+__istartswith 		case insensitive	f__istartswith='abhi'
+__endswith 		    case sensitive 		f__endswith='abhi'
+__iendswith 		case insensitive	f__iendsswith='abhi'
+__range 			Range test(inclu) 	d__range=(start_d,end_d)
+__year   			month, day also     p_date__year = 1900
+__isnull 			Takes True/False 	p_date__isnull = True
+__search 			Fastr than contains f__search = 'abhi'
+__regex 			Case-sensitive		f__regex = r'a..i'
+__iregex 			Case-insensitive	f__iregex = r'a..i'
+"""
+]]>
+</content>
+    <tabTrigger>notes</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-lookup-kwargs</description>
+</snippet>

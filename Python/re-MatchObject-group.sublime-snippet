@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object}.group(${2:[groupid1, groupid2,...]})
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>MatchObject group</description>
+</snippet>

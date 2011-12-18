@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:import scala.util.Random}
+val ${2:randomGen} = new Random()
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<scope>source.scala</scope>
+	<description>random</description>
+</snippet>

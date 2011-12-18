@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# Object has get_absolute_url() method}
+return redirect(${2:object})
+]]>
+</content>
+    <tabTrigger>redirect</tabTrigger>
+    <scope>source.python</scope>
+    <description>redirect object</description>
+</snippet>

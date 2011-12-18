@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.split(${2:sep}${3:,${4:maxsplit}})
+${5:#Use list(str) to get char array}
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Split</description>
+</snippet>

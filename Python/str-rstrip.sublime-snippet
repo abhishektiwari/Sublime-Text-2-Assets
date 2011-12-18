@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.rstrip(${2:'${3:char}'})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>rStrip</description>
+</snippet>

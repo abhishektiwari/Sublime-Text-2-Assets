@@ -1,0 +1,24 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# In /app/templatetags/ ther must be 
+# tags_filters_extras.py and __init__.py}
+${2:from django import template}
+${3:register = template.Library()}
+
+@register.inclusion_tag('tags/${4:tag_name}.html', takes_context = True)
+def $4(${5:context}):
+	""" 
+	1. $4 will be called like {% $4 %}
+	2. returned $8 will be rendered using $4.html
+	"""
+	request = context['request']
+	${6:var} = context['$6']
+	$7
+	return ${8:something}
+]]>
+</content>
+    <tabTrigger>tags</tabTrigger>
+    <scope>source.python</scope>
+    <description>custom inclusion tag context</description>
+</snippet>

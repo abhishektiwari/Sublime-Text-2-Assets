@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+return HttpResponseRedirect(${1:obj}.get_absolute_url())
+]]>
+</content>
+    <tabTrigger>redirect</tabTrigger>
+    <scope>source.python</scope>
+    <description>redirect http get_absolute_url</description>
+</snippet>

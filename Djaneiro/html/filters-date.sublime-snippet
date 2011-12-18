@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+date:"${1:D d M Y}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter date</description>
+</snippet>

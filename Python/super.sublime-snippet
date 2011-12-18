@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+super(${1:ClassName}, ${2:self}).${3:method}(${4:*args, **kwargs})
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>class super self</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+object ${1:ClassName} ${2:extends ${3:OtherClassOrTrait}}{
+	${0}
+}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>singleton object</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+timeuntil:${1:from_date}
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter timeuntil</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+pass
+]]>
+</content>
+	<tabTrigger>loop</tabTrigger>
+	<scope>source.python</scope>
+	<description>pass</description>
+</snippet>

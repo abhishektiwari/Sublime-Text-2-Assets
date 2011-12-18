@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+@login_required
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator login</description>
+</snippet>

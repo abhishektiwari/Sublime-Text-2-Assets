@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.environ
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>list os.environ</description>
+</snippet>

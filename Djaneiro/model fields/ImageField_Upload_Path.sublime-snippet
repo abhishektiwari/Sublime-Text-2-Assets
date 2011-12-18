@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+import uuid
+import os
+
+${1:IMAGE_STORAGE_DIR} = '${2:folder_name}'
+
+def ${3:image}_file_path(instance=None, filename=None):
+    ext = filename.split('.')[-1]
+    filename = "%s.%s" % (uuid.uuid4(), ext)
+    return os.path.join($1, filename)
+]]>
+</content>
+    <tabTrigger>mimg</tabTrigger>
+    <scope>source.python</scope>
+    <description>ImageField (mimg) upload path</description>
+</snippet>

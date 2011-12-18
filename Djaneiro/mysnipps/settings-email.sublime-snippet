@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+# Email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'no-reply@${1:domain.com}'
+EMAIL_HOST_PASSWORD = '${2:mypass1234}'
+EMAIL_PORT = 587
+]]>
+</content>
+    <tabTrigger>setting</tabTrigger>
+    <scope>source.python</scope>
+    <description>email</description>
+</snippet>

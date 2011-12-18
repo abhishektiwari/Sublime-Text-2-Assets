@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+url(r'^${1:regex}\$', TemplateView.as_view(template_name="${2:about.html}")),
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>TemplateView</description>
+</snippet>

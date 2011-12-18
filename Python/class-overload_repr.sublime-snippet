@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+def __repr__(self):
+	"""Called for official string representation of an object."""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all __repr__</description>
+</snippet>

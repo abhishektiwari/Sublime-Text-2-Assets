@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+return HttpResponseRedirect(reverse('${1:view_name}', args=${2:None}, kwargs=${3:None}))
+]]>
+</content>
+    <tabTrigger>redirect</tabTrigger>
+    <scope>source.python</scope>
+    <description>redirect reverse</description>
+</snippet>

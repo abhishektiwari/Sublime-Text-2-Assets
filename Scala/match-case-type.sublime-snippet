@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+${1:expr} match {
+	case ${2:i}:${3:Int} => $4
+	case ${5:m}:${6:Map[_,_]} => $7
+	case ${8:_}    => $0
+}
+// $1 should be Any type
+]]>
+</content>
+	<tabTrigger>match</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

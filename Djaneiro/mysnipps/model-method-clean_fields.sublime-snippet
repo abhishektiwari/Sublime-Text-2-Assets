@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+def clean_fields(self, exclude=${1:None})
+	"""
+	Validates all fields on your model. 
+    """
+    pass
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-clean_fields</description>
+</snippet>

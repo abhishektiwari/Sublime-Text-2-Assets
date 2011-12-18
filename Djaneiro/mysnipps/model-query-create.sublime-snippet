@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set} = ${2:ModelName}.objects.create(${3:**kwargs})
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-create</description>
+</snippet>

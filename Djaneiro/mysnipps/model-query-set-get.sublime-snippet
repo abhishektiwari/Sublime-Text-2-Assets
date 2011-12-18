@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set}.get(${2:field_lookup})
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-set-get</description>
+</snippet>

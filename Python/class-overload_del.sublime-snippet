@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __del__(self):
+	"""
+	Called when the instance is about to be destroyed. Like 
+	del object
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all del</description>
+</snippet>

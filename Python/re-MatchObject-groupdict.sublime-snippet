@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object}.groupdict()
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>MatchObject groupdict</description>
+</snippet>

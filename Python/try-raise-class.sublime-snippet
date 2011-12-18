@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+raise ${1:class}${2:(${3:arg})}
+]]>
+</content>
+	<tabTrigger>try</tabTrigger>
+	<scope>source.python</scope>
+	<description>Raise-class</description>
+</snippet>

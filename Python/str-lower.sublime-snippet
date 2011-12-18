@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.lower()
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Lower</description>
+</snippet>

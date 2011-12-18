@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+from ${1:your_app}.signals import ${2:my_signal}
+from django.dispatch import receiver
+
+@receiver($2, sender=${3:None})
+def $2_handler(sender, **kwargs):
+	${4:arg1} = kwargs['$4']
+	${5:arg2} = kwargs['$5']
+	# Do something
+	$6
+]]>
+</content>
+    <tabTrigger>signal</tabTrigger>
+    <scope>source.python</scope>
+    <description>signal listen</description>
+</snippet>

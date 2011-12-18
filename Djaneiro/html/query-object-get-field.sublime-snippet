@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object}.${2:related_object}.${3:get}.${4:field}
+]]> 
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>object get field</description>
+</snippet>

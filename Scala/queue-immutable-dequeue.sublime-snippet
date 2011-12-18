@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+val (${1:element}, ${2:new_queue}) = ${3:my_queue}.dequeue
+]]>
+</content>
+	<tabTrigger>queue</tabTrigger>
+	<scope>source.scala</scope>
+</snippet>

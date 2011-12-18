@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+{{ ${1:variable}|${2:filter} }}
+]]> </content>
+    <tabTrigger>var</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>var filter</description>
+</snippet>

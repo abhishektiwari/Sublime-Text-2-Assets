@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+{% if user.is_authenticated %}
+	$2
+{% else %}
+	$3
+{% endif %}
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>is_authenticated block</description>
+</snippet>

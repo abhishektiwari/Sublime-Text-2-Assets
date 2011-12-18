@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __bool__(self):
+	"""
+	Called for truth value testing and built-n bool function.
+	Return True or False
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all __bool__</description>
+</snippet>

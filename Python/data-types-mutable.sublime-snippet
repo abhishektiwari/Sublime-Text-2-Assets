@@ -1,0 +1,22 @@
+<snippet>
+<content>
+<![CDATA[
+
+# String: An immutable sequence if characters(but string is replaceable)
+# Bytes: Same as string but sequence of integers
+# Sets:  Mutable unordered collection of unique and immutable objects
+# Tuples: Immutable arrays of object reference accessed by offset
+# Lists: Mutable arrays of object reference accessed by offset
+
+#                           __ Mutable (List, Dictionary, Sets)
+#                          |
+# Compound object types ---|
+#                          |__ Not Mutable (Strings, Bytes Tuples)
+#
+
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

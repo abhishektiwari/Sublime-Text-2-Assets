@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+sys.path.append('${1:path/to/folder}')
+${2:# usual list operation}
+]]>
+</content>
+	<tabTrigger>sys</tabTrigger>
+	<scope>source.python</scope>
+	<description>path-append</description>
+</snippet>

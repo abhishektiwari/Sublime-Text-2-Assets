@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+first
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter first</description>
+</snippet>

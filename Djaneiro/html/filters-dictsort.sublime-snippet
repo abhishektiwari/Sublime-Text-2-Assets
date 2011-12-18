@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+dictsort:"${1:key}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter dictsort</description>
+</snippet>

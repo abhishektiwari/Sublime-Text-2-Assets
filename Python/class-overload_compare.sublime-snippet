@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+def __${1:lt | le | gt | ge | eq | ne | cmp}__(self, ${2:other}):
+	"""
+	Compare object self and $2 and return True or False
+	called as a <=> b where a and b are objects
+	"""
+	if type(self) != type($2):
+		raise Exception('Incompatible argument to __$1__: ' + str($2)
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all __cmp__</description>
+</snippet>

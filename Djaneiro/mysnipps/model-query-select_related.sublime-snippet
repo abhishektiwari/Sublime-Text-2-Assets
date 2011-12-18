@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set} = ${2:ModelName}.objects.select_related(${3:fields})${4:.${5:get/filter/all}()}
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-select_related</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.find(${2:substr}${3:,${4:start}}${5:,${6:end}})
+${7:#Return index, -1 if not found}
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Find</description>
+</snippet>

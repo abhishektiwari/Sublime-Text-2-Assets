@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+next(${1:iterator}${2:, default})
+]]>
+</content>
+	<tabTrigger>iterator</tabTrigger>
+	<scope>source.python</scope>
+	<description>next</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+for dir_name, sub_dirs, files in os.walk(${1:path}):
+	${2:#os.walk for each directory generates a 3 element tuple}
+	$0
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path walk os</description>
+</snippet>

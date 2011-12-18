@@ -1,0 +1,28 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ModelName}Form(forms.ModelForm):
+	# Model field --> Form field --> Widget
+	# Set label, queryset and widget Form field
+	${10:field} = form.${11:Name}Field(${12:**kwargs})
+
+	# Meta information for $1 
+	class Meta:
+		model = $1
+		exclude = (${2:'${3:field}','${4:field}'})
+		# Overriding the default widgets
+		# Add HTML title, cols, rows, size and css class
+		widgets = {
+        '${5:field}':${6:WidgetName}(
+        	${7:attrs={'${8:attr}': ${9:val},\}}
+        	),
+        }
+	
+	# Overriding the default methods init, save, clean
+
+]]>
+</content>
+    <tabTrigger>modelform</tabTrigger>
+    <scope>source.python</scope>
+    <description>ModelForm</description>
+</snippet>

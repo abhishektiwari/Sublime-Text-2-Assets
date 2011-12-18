@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+import readline
+import rlcompleter
+readline.parse_and_bind("tab: complete")
+]]>
+</content>
+	<tabTrigger>tab</tabTrigger>
+	<scope>source.python</scope>
+	<description>Tab complete</description>
+</snippet>

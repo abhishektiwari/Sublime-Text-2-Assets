@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+libraryDependencies += "org.scalatest" %% "scalatest" % "1.6.1" % "test"
+
+]]>
+</content>
+	<tabTrigger>sbt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sbt</scope>
+</snippet>

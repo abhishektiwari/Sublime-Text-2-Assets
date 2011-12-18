@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+import cProfile
+cProfile.run('${function or expression}')
+]]>
+</content>
+	<tabTrigger>runtime</tabTrigger>
+	<scope>source.python</scope>
+	<description>cProfile</description>
+</snippet>

@@ -8,6 +8,6 @@ abstract class ${1:ClassName} {
 ]]>
 </content>
 	<tabTrigger>class</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.scala</scope>
+	<description>abstract</description>
 </snippet>

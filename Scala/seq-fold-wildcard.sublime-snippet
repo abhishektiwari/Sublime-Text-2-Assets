@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:seqName}.fold(${2:initial})(_ ${5:operator} _)
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+    <content><![CDATA[${1:FIELDNAME} = models.OneToOneField(${2:ModelName}, verbose_name="${3:v_name}"$4)]]></content>
+    <tabTrigger>o2o</tabTrigger>
+    <scope>source.python</scope>
+    <description>OneToOneField full</description>
+</snippet>

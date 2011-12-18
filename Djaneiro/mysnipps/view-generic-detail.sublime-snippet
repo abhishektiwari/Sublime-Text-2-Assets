@@ -1,0 +1,30 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ModelName}DetailView(DetailView):
+
+	context_object_name = "${2:model_name}_detail"
+	template_name = "$2_detail.html"
+
+	def get_queryset(self):
+		"""
+		Get arguments captured from URL conf using self.args(positional)
+		and self.kwargs(name-based). 
+		"""
+		return ${3:query_set}
+
+	def get_context_data(self, **kwargs):
+		"""
+		Custome implementation of the get_context_data method
+		"""
+		# Call the base implementation first to get a context
+		context = super($1DetailView, self).get_context_data(**kwargs)
+		# Add a new context
+		context['${4:context_name}'] = ${5:value}
+		return context
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>Generic DetailView</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object_tuple} = ${2:query_set}.values_list(${3:fields})
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-set-values_list</description>
+</snippet>

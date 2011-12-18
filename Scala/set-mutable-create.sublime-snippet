@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:var} ${2:setName} = Set.empty[${3:type}]
+]]>
+</content>
+	<tabTrigger>set</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

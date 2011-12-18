@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+${1:new_queue} = ${2:my_queue}.enqueue(${3:value or list})
+]]>
+</content>
+	<tabTrigger>queue</tabTrigger>
+	<scope>source.scala</scope>
+</snippet>

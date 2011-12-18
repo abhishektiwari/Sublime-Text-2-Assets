@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+name := "${1:Project Name"}
+ 
+version := "${2:1.0}"
+ 
+scalaVersion := "${3:2.9.1}"
+
+]]>
+</content>
+	<tabTrigger>sbt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sbt</scope>
+</snippet>

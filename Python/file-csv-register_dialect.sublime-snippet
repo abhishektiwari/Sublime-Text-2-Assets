@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+csv.register_dialect('${1:dilect_name}', 
+                      delimiter='${2:\t}', 
+                      quoting=${3:csv.QUOTE_NONE}
+                     )
+]]>
+</content>
+	<tabTrigger>file</tabTrigger>
+	<scope>source.python</scope>
+	<description>csv register_dialect</description>
+</snippet>

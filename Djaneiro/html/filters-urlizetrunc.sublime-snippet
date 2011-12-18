@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+urlizetrunc:${1:15}
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter urlizetrunc</description>
+</snippet>

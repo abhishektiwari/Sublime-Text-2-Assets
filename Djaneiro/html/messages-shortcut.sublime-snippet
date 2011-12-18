@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+	    {{ message }}
+	</li>
+    {% endfor %}
+</ul>
+{% endif %}
+]]> </content>
+    <tabTrigger>messages</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>messages</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+default_if_none:"${1:arg}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter default_if_none</description>
+</snippet>

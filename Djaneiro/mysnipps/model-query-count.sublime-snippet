@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object_count} = ${2:ModelName}.objects.count()
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-count</description>
+</snippet>

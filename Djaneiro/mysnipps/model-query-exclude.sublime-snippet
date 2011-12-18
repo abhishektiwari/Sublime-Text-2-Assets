@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set} = ${2:ModelName}.objects.exclude(${3:field_lookup})
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-exclude</description>
+</snippet>

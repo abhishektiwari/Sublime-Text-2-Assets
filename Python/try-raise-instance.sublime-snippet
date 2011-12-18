@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+raise ${1:instance}
+]]>
+</content>
+	<tabTrigger>try</tabTrigger>
+	<scope>source.python</scope>
+	<description>Raise-instance</description>
+</snippet>

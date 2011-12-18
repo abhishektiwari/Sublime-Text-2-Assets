@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.commonprefix(${1:list of paths})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path common prefix</description>
+</snippet>

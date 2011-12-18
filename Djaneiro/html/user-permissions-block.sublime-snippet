@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+{% if perm.${1:foo} %}
+	$2
+{% else %}
+	$3
+{% endif %}
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>user perm block</description>
+</snippet>

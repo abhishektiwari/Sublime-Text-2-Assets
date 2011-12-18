@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+removetags:"${1:b span}"|safe
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter removetags</description>
+</snippet>

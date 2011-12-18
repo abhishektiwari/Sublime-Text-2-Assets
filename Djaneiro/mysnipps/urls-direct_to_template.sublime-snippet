@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+url(r'^${1:regex}\$', direct_to_template, {'template':'${2:my_tamp}.html'}),
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>direct_to_template</description>
+</snippet>

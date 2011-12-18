@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+"${6:%s} ${7:%d} ${8:%0.2f}" % (${1:val1}${2:,${3:val2}}${4:,${5:val2}})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Formatting</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:query_set} = ${2:ModelName}.objects.extra(select=None, where=None, params=None, tables=None, order_by=None, select_params=None)
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-extra-sql</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+raise Http404
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>Http404</description>
+</snippet>

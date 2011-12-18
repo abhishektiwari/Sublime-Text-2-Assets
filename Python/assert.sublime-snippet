@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+assert ${1:expression returning True or False}${2:, ${3:message}}
+]]>
+</content>
+	<tabTrigger>assert</tabTrigger>
+	<scope>source.python</scope>
+	<description>Assert</description>
+</snippet>

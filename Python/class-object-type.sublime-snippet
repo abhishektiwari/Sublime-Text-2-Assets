@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+type(${1:object})
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Object Type</description>
+</snippet>

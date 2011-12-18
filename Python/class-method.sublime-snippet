@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+@classmethod
+def ${1:class_method}(${2:cls}, ${3:...})
+"""
+docstring for $1 
+Use as ClassName.$1 or ClassName().$1
+"""
+	${4:do something}
+	return ${5:value}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Class Method</description>
+</snippet>

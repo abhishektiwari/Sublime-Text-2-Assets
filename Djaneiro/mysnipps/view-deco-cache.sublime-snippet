@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+# $2 mins * $1 seconds
+@cache_page(${1:60} * ${2:15}, key_prefix="${3:site1}")
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator cache</description>
+</snippet>

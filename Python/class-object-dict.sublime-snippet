@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object}.__dict__
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Object dict</description>
+</snippet>

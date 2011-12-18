@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+compile('${1:string}', '${2:filename}', ${3:exec/eval})
+]]>
+</content>
+	<tabTrigger>compile</tabTrigger>
+	<scope>source.python</scope>
+	<description>compile</description>
+</snippet>

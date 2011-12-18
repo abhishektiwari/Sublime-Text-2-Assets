@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+from django.conf.urls.defaults import *
+urlpatterns = patterns('${1:view_prefix}',
+    # Add pattern descriptions
+    $0
+    )
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>urls</description>
+</snippet>

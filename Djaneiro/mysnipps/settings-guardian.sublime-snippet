@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+ANONYMOUS_USER_ID = -1
+]]>
+</content>
+    <tabTrigger>setting</tabTrigger>
+    <scope>source.python</scope>
+    <description>guardian</description>
+</snippet>

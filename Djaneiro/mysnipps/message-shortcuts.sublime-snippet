@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+${1:from django.contrib import messages}
+messages.${2:info}(request, '${3:my message is %s}' ${4:% (${5:var})})
+${6:#info, success, warning, error, debug}
+]]>
+</content>
+    <tabTrigger>message</tabTrigger>
+    <scope>source.python</scope>
+    <description>message shortcuts</description>
+</snippet>

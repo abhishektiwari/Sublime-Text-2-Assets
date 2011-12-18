@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+del ${1:name}[${2:i}:${3:j}:${4:k}]
+]]>
+</content>
+	<tabTrigger>del</tabTrigger>
+	<scope>source.python</scope>
+	<description>del name[i:j:k]</description>
+</snippet>

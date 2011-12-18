@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+url(r'^${1:foo}/(?P<${2:id}>\d+)/\$', redirect_to, {'url': '/${3:bar}/%($2)s/', 'permanent': ${4:False}}),
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>redirect_to</description>
+</snippet>

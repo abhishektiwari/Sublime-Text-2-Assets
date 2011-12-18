@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+val (${1:seq1},${2:seq2}) = unzip ${3:seqName}
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

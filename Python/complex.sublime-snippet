@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+complex(${1:real}${2:, ${3:imag}})
+]]>
+</content>
+	<tabTrigger>complex</tabTrigger>
+	<scope>source.python</scope>
+	<description>complex</description>
+</snippet>

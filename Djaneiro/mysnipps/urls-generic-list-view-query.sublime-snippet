@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+url(r'^${1:regex}\$', ListView.as_view(
+		queryset=${2:ModelName.objects.all()},
+		context_object_name="${3:some_list}",
+	)),
+# View will use the template <app_label>/<model_name>_list.html by default
+# $3 will be avilable in template context
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>ListView Query</description>
+</snippet>

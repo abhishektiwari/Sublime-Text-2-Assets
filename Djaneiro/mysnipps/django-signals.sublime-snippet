@@ -1,0 +1,98 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+----------------- Working with Custom Signal ---------------------------
+
+1. Create the signal in /your_app/signals.py:
+
+from django.dispatch import Signal
+my_signal = Signal(providing_args=["argument1","argument2",]
+
+2. Send the signal 
+
+(Method a) From /your_app/views.py
+
+from your_app import signals
+
+def my_view(request):
+	...
+	signals.my_signal.send(sender=None, argument1=arg1, argument2=arg2)
+	...
+
+(Method b) From /your_app/views.py
+
+3. Listen the signal in /your_app/tasks.py
+
+(Method a):
+from your_app.signals import my_signal
+
+def my_signal_handler(sender, **kwargs):
+	argument1 = kwargs['argument1']
+	argument2 = kwargs['argument2']
+	# Do something
+
+my_signal.connect(my_signal_handler)
+
+(Method b):
+from your_app.signals import my_signal
+from django.dispatch import receiver
+
+@receiver(my_signal)
+def my_signal_handler(sender, **kwargs):
+	argument1 = kwargs['argument1']
+	argument2 = kwargs['argument2']
+	# Do something
+
+----------------- Working with Built-in Signal ---------------------------
+
+1. Signals are predefined and sent when an action takes place. Most of cases sender is ModelName
+
+# Sent before or after a model's __init__() method is called.
+django.db.models.signals.pre_init | post_init
+
+# Sent before or after a model's save() method is called.
+django.db.models.signals.pre_save | post_save
+	
+# Sent before or after a model's delete() method is called.
+django.db.models.signals.pre_delete | post_delete
+
+# Sent when a ManyToManyField on a model is changed.
+django.db.models.signals.m2m_changed
+
+# Sent when Django starts or finishes an HTTP request.
+django.core.signals.request_started | request_finished
+
+2. Listen the signal in /your_app/tasks.py
+
+Note you have to import the both signal and handler in models.py
+from django.db.models.signals import post_save
+from tasks import post_save_handler
+
+Otherwise it is better to add listening or handling part in models.py rather than tasks.py
+
+(Method a):
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
+@receiver(post_save, sender=ModelName)
+def post_save_handler(sender, instance, create, **kwargs):
+	...
+
+
+(Method b):
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
+
+def post_save_handler(sender, instance, create, **kwargs):
+	...
+
+post_save.connect(post_save_handler, sender=ModelName)
+"""
+]]>
+</content>
+    <tabTrigger>notes</tabTrigger>
+    <scope>source.python</scope>
+    <description>django signals</description>
+</snippet>

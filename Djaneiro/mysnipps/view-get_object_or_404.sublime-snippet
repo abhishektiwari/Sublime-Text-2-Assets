@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+get_object_or_404(${1:ModelName},${2:field_lookup})
+]]>
+</content>
+    <tabTrigger>get</tabTrigger>
+    <scope>source.python</scope>
+    <description>get_object_or_404</description>
+</snippet>

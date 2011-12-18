@@ -1,0 +1,63 @@
+<snippet>
+<content>
+<![CDATA[
+// 1
+// If a class does not mention a superclass in its definition, the root type
+scala.AnyRef is implicitly assumed. So following:
+
+class Rational(n: Int, d: Int) {
+	// class def var etc
+}
+
+is same as this one:
+
+class Rational(n: Int, d: Int) extends AnyRef {
+	// as before
+}
+
+As ususal we can use override function to overload methods defined in AnyRef.
+
+// 2
+A method is abstract if it does not have an implementation (i.e., no equals sign or body). Unlike Java, in Scala no abstract modifier is necessary (or allowed) on class method declarations. Methods that do have an implementation are called concrete.
+
+// 3
+Parameterless methods are quite common in Scala. 
+
+def width: Int
+
+By contrast, methods defined with empty parentheses are called empty-paren methods.
+
+def width(): Int
+
+
+The recommended convention is to use a parameterless method whenever there are no parameters and the method accesses mutable state only by reading fields of the containing object (in particular, it does not change mutable state). 
+
+// 4
+
+All classes in Scala have a primary constructor and optionally some auxiliary constructors defined using this with the same signature (which must defer to the primary constructor or another auxiliary constructor).
+
+
+class Foo(x: Int, y: Int, z: String) {  
+  // default y parameter to 0  
+  def this(x: Int, z: String) = this(x, 0, z)   
+  // default x & y parameters to 0
+  // calls previous auxiliary constructor 
+  // which calls the primary constructor  
+  def this(z: String) = this(0, z);   
+}
+
+In Scala, every auxiliary constructor must invoke another constructor of the same class as its first action. In other words, the first statement in every auxiliary constructor in every Scala class will have the form "this(. . . )". The invoked constructor is either the primary constructor, or another auxiliary constructor that comes textually before the calling constructor. The net effect of this rule is that every constructor invocation in Scala will end up eventually calling the primary constructor of the class. The primary constructor is thus the single point of entry of a class.
+
+// 5 
+Class constructor with default parameters
+
+class Foo(x:Int, y:Int = 0, z:Int=0) { 
+
+}
+Parameters with default values must come after the ones with no default values in the parameter list.  
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>notes</description>
+</snippet>

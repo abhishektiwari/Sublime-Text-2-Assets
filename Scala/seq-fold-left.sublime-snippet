@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+(${1:initial} /: ${2:seqName})(${3:a},${4:b}) => $3 ${5:operator} $4)
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+	<decription>/:</decription>
+</snippet>

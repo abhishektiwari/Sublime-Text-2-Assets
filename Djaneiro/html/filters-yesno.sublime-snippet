@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+yesno:"${1:yes,no,maybe}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter yesno</description>
+</snippet>

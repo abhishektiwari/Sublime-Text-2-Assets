@@ -2,6 +2,7 @@
 <content>
 <![CDATA[
 object ${1:ObjectName} extends Application {
+	// Can not access command-line arguments + threading issues
 	$0
 }
 ]]>

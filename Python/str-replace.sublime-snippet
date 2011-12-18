@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.replace(${2:oldsub},${3:newsub}${4:,${5:count}})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Replace</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:#from datetime import datetime}
+self.${2:created_on} = datetime.today()
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-field-datetime</description>
+</snippet>

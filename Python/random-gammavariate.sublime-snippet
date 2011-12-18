@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+random.gammavariate(${1:alpha}, ${2:beta})
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>random gammavariate</description>
+</snippet>

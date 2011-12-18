@@ -2,9 +2,10 @@
 <content>
 <![CDATA[
 require(${1:${2:arg} != 0})
+// precondition on initialization parameters
 ]]>
 </content>
 	<tabTrigger>class</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.scala</scope>
+	<description>precondition</description>
 </snippet>

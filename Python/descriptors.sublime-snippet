@@ -1,0 +1,73 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+What is a descriptor?
+A descriptor is a class that implements one or more of the special methods, __get__(), __set__(), and __delete__(). 
+What descriptor are used for?
+Descriptor instances are used to represent the attributes of other classes.
+What is Descriptor design pattern?
+The Descriptor design pattern has two parts: the Owner and the attribute Descriptor class -
+ 
+Owner: The Owner is usually a relatively complex object that uses one or more Descriptor classes for it's attributes. 
+Descriptor class: Each Descriptor class defines get, set and delete methods for a specific attribute of the Owner. A descriptor manages a single, specific attribute.
+
+A few definitions:
+
+data descriptor: A descriptor with the __get__ and __set__ methods of the descriptor protocol defined.
+
+non-data descriptor: A descriptor with only the __get__ method of the descriptor protocol defined. "Python methods (including staticmethod() and classmethod()) are implemented as non-data descriptors."
+
+Implementation:
+To be recognized as a Descriptor, a class must implement some combination of the following three methods.
+
+__get__ ( self , instance , owner )
+The instance argument is the self variable of the owning class; the owner argument is the owning class object. This method of the descriptor must return this attribute's value. If this descriptor implements a class level variable, the instance parameter can be ignored.
+
+__set__ ( self , instance , value )
+The instance argument is the self variable of the owning class. This method of the descriptor must set this attribute's value.
+
+__delete__ ( self , instance )
+The instance argument is the self variable of the owning class. This method of the descriptor must delete this attribute's value.
+
+Sometimes, a descriptor class will also need an __init__ method function to initialize the descriptor's internal state.
+
+Ex-1: Here's a simple example of an object with two attributes defined by descriptors. One descriptor (Celsius) contains it's own value. The other desriptor (Farenheit), depends on the Celsius value, showing how attributes can be "linked" so that a change to one directly changes the other.
+
+"""
+class Celsius(object):
+	def __init__( self, value=0.0 ):
+		self.value= float(value)
+	def __get__( self, instance, owner ):
+		return self.value
+	def __set__( self, instance, value ):
+		self.value= float(value)
+  
+class Farenheit(object):
+	def __get__( self, instance, owner ):
+		return instance.celsius * 9 / 5 + 32
+	def __set__( self, instance, value ):
+		instance.celsius= (float(value)-32) * 5 / 9
+
+class Temperature(object):
+	"""
+	>>> oven = Temperature()
+	>>> oven.celsius = 42
+	>>> oven.celsius
+	42.0
+	>>> oven.farenheit
+	107.6
+	>>> room = Temperature()
+	>>> room.farenheit = 120
+	>>> room.celsius
+	48.888888888888886
+	"""
+	celsius= Celsius()
+	farenheit= Farenheit()
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<scope>source.python</scope>
+	<description>descriptors</description>
+</snippet>
+

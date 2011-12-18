@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+request.user.is_authenticated()
+]]>
+</content>
+    <tabTrigger>request</tabTrigger>
+    <scope>source.python</scope>
+    <description>request user is_authenticated</description>
+</snippet>

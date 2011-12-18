@@ -1,0 +1,61 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+Method					Checks that
+assertEqual(a, b)			a == b	 
+assertNotEqual(a, b)		a != b	 
+assertTrue(x)				bool(x) is True	 
+assertFalse(x)				bool(x) is False	 
+assertIs(a, b)				a is b
+assertIsNot(a, b)			a is not b
+assertIsNone(x)				x is None
+assertIsNotNone(x)			x is not None
+assertIn(a, b)				a in b
+assertNotIn(a, b)			a not in b
+assertIsInstance(a, b)		isinstance(a, b)
+assertNotIsInstance(a, b)	not isinstance(a, b)
+assertRaises(msg) 			assertRaises(exception, fun, *args, **kwds)
+assertRaisesRegexp(msg) assertRaisesRegexp(exception, regex, fun, *args, **kwds)
+
+
+assertAlmostEqual(a, b)		round(a-b, 7) == 0	 
+assertNotAlmostEqual(a, b)	round(a-b, 7) != 0	 
+assertGreater(a, b)			a > b
+assertGreaterEqual(a, b)	a >= b
+assertLess(a, b)			a < b
+assertLessEqual(a, b)		a <= b
+assertRegexpMatches(s, re)	regex.search(s)
+assertNotRegexpMatches(s, re)	not regex.search(s)
+assertItemsEqual(a, b)		sorted(a) == sorted(b)
+assertDictContainsSubset(a, b)	all the key/value pairs in a exist in b
+
+
+assertMultiLineEqual(a, b)	strings
+assertSequenceEqual(a, b)	sequences
+assertListEqual(a, b)		lists
+assertTupleEqual(a, b)		tuples
+assertSetEqual(a, b)		sets or frozensets
+assertDictEqual(a, b)		dicts
+
+
+Both Classes  and Methods can be skipped:
+
+@unittest.skip(reason)
+Unconditionally skip the decorated test. reason should describe why the test is being skipped.
+
+@unittest.skipIf(condition, reason)
+Skip the decorated test if condition is true
+
+@unittest.skipUnless(condition, reason)
+Skip the decorated test unless condition is true.
+
+@unittest.expectedFailure()
+Mark the test as an expected failure. If the test fails when run, the test is not counted as a failure.
+"""
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<scope>source.python</scope>
+	<description>Unit test assert</description>
+</snippet>

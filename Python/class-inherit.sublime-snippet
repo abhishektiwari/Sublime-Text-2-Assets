@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ClassName}(${2:object}):
+	"""${3:docstring for $1}"""
+	def __init__(self${4:, ${5:arg}}):
+		${6:super($1, self).__init__()}
+		${7:self._${var} = $5}
+	$0
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Class</description>
+</snippet>

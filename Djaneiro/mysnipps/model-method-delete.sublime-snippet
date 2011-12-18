@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def delete(self):
+	"""
+	When deleting objects in bulk using a QuerySet this method may not called. To ensure use pre_delete and/or post_delete signals.
+	"""
+	# Do something here
+    super(${1:ModelName}, self).delete()
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-str</description>
+</snippet>

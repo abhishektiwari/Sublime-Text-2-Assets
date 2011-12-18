@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+random.sample(${1:seq}, ${2:size})
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>random sample</description>
+</snippet>

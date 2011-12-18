@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+<form method="post" action="." class="form-stacked">{% csrf_token %}
+	<fieldset>
+		$0
+	<input type="submit" class="btn primary" value="{% trans 'Push' %}"/>
+	</fieldset>
+</form>  
+]]> </content>
+    <tabTrigger>form</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>form stacked</description>
+</snippet>

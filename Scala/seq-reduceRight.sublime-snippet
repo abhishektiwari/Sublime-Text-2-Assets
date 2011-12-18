@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:seqName}.reduceRight((${2:a},${3:b}) => $2 ${4:operator} $3)
+]]>
+</content>
+	<tabTrigger>seq</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

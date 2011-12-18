@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+reader = csv.reader(${1:file_object}${2:, dialect='${3:excel}'})
+${4:# reader.next()}
+for row in reader:
+	$0
+]]>
+</content>
+	<tabTrigger>file</tabTrigger>
+	<scope>source.python</scope>
+	<description>csv reader</description>
+</snippet>

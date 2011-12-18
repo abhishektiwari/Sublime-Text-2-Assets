@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+{% load cache %}
+{% cache ${1:500} ${2:sidebar} ${3:request.user.username} %}
+    ${4:.. sidebar ..}
+{% endcache %}
+]]>
+</content>
+    <tabTrigger>cache</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>cache user-specific</description>
+</snippet>

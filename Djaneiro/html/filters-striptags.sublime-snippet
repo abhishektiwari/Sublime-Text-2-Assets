@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+striptags
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter striptags html</description>
+</snippet>

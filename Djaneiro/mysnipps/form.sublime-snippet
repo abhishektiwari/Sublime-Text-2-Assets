@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+${1:from django import forms}
+class ${2:Name}Form(forms.Form):
+	# Define the form fields
+]]>
+</content>
+    <tabTrigger>form</tabTrigger>
+    <scope>source.python</scope>
+    <description>Form</description>
+</snippet>

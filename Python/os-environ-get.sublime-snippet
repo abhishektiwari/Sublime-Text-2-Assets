@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.environ.get('${1:ENVNAME}', None)
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>get os.environ</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+from django.db import models
+from django.contrib.auth.models import User
+from django.db.models import permalink
+from datetime import datetime
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-imports</description>
+</snippet>

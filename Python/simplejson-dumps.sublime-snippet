@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+json.dumps(${1:pyobject})
+]]>
+</content>
+	<tabTrigger>json</tabTrigger>
+	<scope>source.python</scope>
+	<description>dumps</description>
+</snippet>

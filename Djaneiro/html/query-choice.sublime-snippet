@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object}.get_${2:field_name}_display
+]]> 
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>choice verbose</description>
+</snippet>

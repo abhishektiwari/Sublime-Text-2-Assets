@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+def clean(self)
+	"""
+	Provides custom model validation, and to modify attributes on model if desired
+    """
+    pass
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-clean</description>
+</snippet>

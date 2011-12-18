@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+from django.db.models.signals import ${1:pre_save}
+from django.dispatch import receiver
+
+@receiver($1, sender=${2:ModelName})
+def $2_handler(sender, instance, **kwargs):
+	${4:arg1} = kwargs['$4']
+	${5:arg2} = kwargs['$5']
+	# Do something
+	$6
+]]>
+</content>
+    <tabTrigger>signal</tabTrigger>
+    <scope>source.python</scope>
+    <description>signal listen pre_save</description>
+</snippet>

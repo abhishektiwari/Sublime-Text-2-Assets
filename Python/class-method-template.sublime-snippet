@@ -1,0 +1,48 @@
+<snippet>
+<content>
+<![CDATA[
+# To external call from class, ClassName.class_method(arg1, arg2)
+# To external call from object, ClassName().class_method(arg1, arg2)
+# Internal call in a class method, cls.class_method(arg1, arg2)
+# Internal call in a instance method, self.class_method(arg1, arg2)
+# If a class method is called for a derived class, the derived class object is passed as the implied first argument.
+@classmethod
+def ${1:class_method}(${2:cls}, ${3:...})
+"""
+docstring for $1
+"""
+	${4:do something}
+	return ${5:value}
+	
+@classmethod
+def InstanceCount($2):
+"""
+Instances = [] or Instances = {} must be declared
+in global scope of class
+"""
+	return len($2.Instances)
+	
+@classmethod
+def GetInstances(self): 
+"""
+Returning generator  not orginal
+"""
+	return (${6:value} for ${6:value} in self.Instances)
+	#return (${6:value} for ${6:value} in self.Instance.keys())
+	
+@classmethod
+def Get(self, target):
+"""
+Return the instance whose GID is target
+"""
+		for inst in self.GetInstances:     # using the Find template
+			if target == inst.get_gid():   # define a get_gid method
+				return inst
+		# return self.Instances.get(target, None) 
+
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Class Method Template</description>
+</snippet>

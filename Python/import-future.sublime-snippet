@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+from __future__ import ${1:with_statement}
+]]>
+</content>
+	<tabTrigger>import</tabTrigger>
+	<scope>source.python</scope>
+	<description>Future</description>
+</snippet>

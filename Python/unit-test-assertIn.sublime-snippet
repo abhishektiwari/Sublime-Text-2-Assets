@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+self.assertIn(${1:a}, ${2:b}${3:, msg=${4:None}})
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>assertIn(a, b)</description>
+</snippet>

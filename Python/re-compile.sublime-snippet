@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:cp_patt} = re.compile('${2:pattern}'${3:,${4:re.L | re.I | re.M}})
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>Compile</description>
+</snippet>

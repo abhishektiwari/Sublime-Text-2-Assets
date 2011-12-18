@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:str}.endswith(${2:substr}${3:,${4:start}}${5:,${6:end}})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Ends with</description>
+</snippet>

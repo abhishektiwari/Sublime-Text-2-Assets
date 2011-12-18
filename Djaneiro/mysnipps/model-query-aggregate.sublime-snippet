@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:adic} = ${2:ModelName}.objects.aggregate(${3:name}=${4:Min/Max/Avg/Sum}('${5:field}'))
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-aggregate</description>
+</snippet>

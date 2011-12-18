@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object_tuple} = ${2:ModelName}.objects.values_list(${3:fields})
+
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-values_list</description>
+</snippet>

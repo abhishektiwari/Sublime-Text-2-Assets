@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __iter__(self):
+	"""
+	Invoked on iter(self) returns __next__(self) method.
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>seq __iter__</description>
+</snippet>
+

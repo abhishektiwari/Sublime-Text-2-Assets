@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+return render(request, '${1:mytemp}.html', {'${2:key}':${3:val}, '${4:key}':${5:val},})
+]]>
+</content>
+    <tabTrigger>render</tabTrigger>
+    <scope>source.python</scope>
+    <description>render </description>
+</snippet>

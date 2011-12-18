@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.mkdir(${1:path}${2:, ${3:777}})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>mkdir</description>
+</snippet>

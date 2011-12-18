@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+@require_http_methods(["GET", "POST"])
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator require http</description>
+</snippet>

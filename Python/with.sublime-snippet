@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+with ${1:expression} ${2:as ${3:variable}}:
+	$0
+]]>
+</content>
+	<tabTrigger>with</tabTrigger>
+	<scope>source.python</scope>
+	<description>With</description>
+</snippet>

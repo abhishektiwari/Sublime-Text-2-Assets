@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+${1:my_queue}.tail
+]]>
+</content>
+	<tabTrigger>queue</tabTrigger>
+	<scope>source.scala</scope>
+</snippet>

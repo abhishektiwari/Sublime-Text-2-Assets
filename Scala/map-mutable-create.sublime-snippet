@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+${1:import scala.collection.mutable.Map}
+${2:val} ${3:mapName} = Map[${4:type}, ${5:type}]()
+$3 += (${6:key} -> ${7:val})
+]]>
+</content>
+	<tabTrigger>map</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

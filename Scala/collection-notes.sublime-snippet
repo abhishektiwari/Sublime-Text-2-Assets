@@ -1,0 +1,52 @@
+<snippet>
+<content>
+<![CDATA[
+							scala.collection
+									|
+								Traversable
+									|
+		-----------------------------------------------------
+		|							|						|
+	   Seq						   Set(Both) 			   Map(Both)
+      IndexedSeq                    SortedSet               SortedMap
+        immutable.Vector 			  immutable.TreeSet       immutable.TreeMap
+        mutable.ResizableArray      immutable.HashSet       immutable.HashMap
+        mutable.ArraySeq            mutable.HashSet         mutable.HashMap
+        mutable.StringBuilder       mutable.LinkedHashSet   mutable.LinkedHashMap
+        (String, Array)             BitSet
+      LinearSeq
+        immutable.List
+        immutable.Stream
+        mutable.MutableList
+        mutable.Queue
+      mutable.Buffer
+        mutable.ListBuffer
+        mutable.ArrayBuffer
+      Range
+ 
+Note Both 
+Seq: A Sequence is an Iterable that has a length and whose elements have fixed index positions, starting from 0.
+Set: A Set is an Iterable that contains no duplicate elements. 
+Map: A Map is an Iterable consisting of pairs of keys and values (also named mappings or associations).
+
+More on Seq:
+
+If a sequence is mutable, it offers in addition a side-effecting update method, which lets sequence elements be updated. 
+
+Trait Seq has two subtraits LinearSeq, and IndexedSeq. These do not add any new operations, but each offers different performance characteristics: A linear sequence has efficient head and tail operations, whereas an indexed sequence has efficient apply, length, and (if mutable) update operations. 
+Linear sequences:  List, Stream.
+Indexed sequences: Array, ArrayBuffer. 
+
+The Vector class provides an interesting compromise between indexed and linear access. It has both effectively constant time indexing overhead and constant time linear access overhead. Because if this, vectors are a good foundation for mixed access patterns where both indexed and linear accesses are used.
+
+
+Ref:
+1. http://www.scala-lang.org/docu/files/collections-api/collections_1.html
+2. http://www.scala-lang.org/docu/files/collections-api/collections_2.html
+3. 
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<scope>source.scala</scope>
+	<description>collection</description>
+</snippet>

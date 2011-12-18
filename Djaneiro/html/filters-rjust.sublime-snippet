@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+rjust:"${1:size}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter rjust</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+# Requires a etag function else None
+@etag(etag_func=${1:None})
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator etag</description>
+</snippet>

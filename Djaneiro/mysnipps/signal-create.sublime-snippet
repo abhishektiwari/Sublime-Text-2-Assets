@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+${1:from django.dispatch import Signal}
+# In /${2:your_app}/signals.py
+${3:my_signal} = Signal(providing_args=["${4:arg1}","${5:arg2}",]
+]]>
+</content>
+    <tabTrigger>signal</tabTrigger>
+    <scope>source.python</scope>
+    <description>signal create</description>
+</snippet>

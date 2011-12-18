@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+dir(${1:object})
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+	<description>Object class name</description>
+</snippet>

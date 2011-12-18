@@ -1,0 +1,16 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+<content>
+<![CDATA[
+def ${1:view_name}(request${2:, ${3:arg1}, ${4:arg2}}):
+	# Prepare the view data and dictionary
+	$5
+
+	# Return Render to response
+	$6
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view</description>
+</snippet>

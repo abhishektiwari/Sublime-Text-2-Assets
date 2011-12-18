@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __getitem__(self):
+	"""
+	Invoked on self[key], self[i:j:k], x in self, and for x
+	in self (and all iteration contexts)
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>seq __getitem__</description>
+</snippet>

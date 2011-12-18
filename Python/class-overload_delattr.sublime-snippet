@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+def __delattr__(self):
+	"""
+	Invoked on del self.name (all attribute deletions).
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>all __delattr__</description>
+</snippet>

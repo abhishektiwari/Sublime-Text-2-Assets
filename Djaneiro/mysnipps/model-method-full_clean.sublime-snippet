@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+def full_clean(self, exclude=${1:None})
+	"""
+	Calls clean_fields, clean, and validate_unique, on the model,
+    and raises a 'ValidationError' for any errors that occurred.
+    
+    Implementation details: http://goo.gl/8fDKu
+    """
+    pass
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-full_clean</description>
+</snippet>

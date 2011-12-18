@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+floatformat:${1:3}
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter floatformat</description>
+</snippet>

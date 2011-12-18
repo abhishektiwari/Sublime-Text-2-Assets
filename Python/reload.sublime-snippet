@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+reload(${1:module})
+]]>
+</content>
+	<tabTrigger>reload</tabTrigger>
+	<scope>source.python</scope>
+	<description>reload</description>
+</snippet>

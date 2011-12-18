@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+random.uniform(${1:a}, ${2:b})
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+	<description>random uniform</description>
+</snippet>

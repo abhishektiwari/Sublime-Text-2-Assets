@@ -1,0 +1,31 @@
+<snippet>
+<content>
+<![CDATA[
+${1:# Model imports}
+
+class ${2:ModelName}(models.Model):
+	${3:# Model Fields}
+
+
+	${4:# Model instance methods}
+
+
+	${5:# Model custom methods}
+
+
+	class Meta:
+		"""
+		Model metadata: permissions, unique, abstract, proxy, managed
+		"""
+        verbose_name = ('$2')
+        verbose_name_plural = ('$2s')
+
+	class Admin:
+		"""Admin related:"""
+        pass
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model</description>
+</snippet>

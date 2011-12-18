@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:user}.email_user(${2:subject}, ${3:message}, from_email=${4:None})
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>user email_user</description>
+</snippet>

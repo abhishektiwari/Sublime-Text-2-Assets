@@ -1,0 +1,7 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+    <content><![CDATA[${1:FIELDNAME} = models.ManyToManyField(${2:ModelName}, through='${3:IntermediateModelName}', verbose_name="${4:v_name}"$5)]]></content>
+    <tabTrigger>m2m</tabTrigger>
+    <scope>source.python</scope>
+    <description>ManyToManyField through</description>
+</snippet>

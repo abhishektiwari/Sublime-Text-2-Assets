@@ -1,0 +1,28 @@
+<snippet>
+<content>
+<![CDATA[
+/*
+For the list (a,b,c,d) fold/reduce is:
+
+reduceLeft(f) => f(f(f(a,b),c),d)
+
+foldLeft(Z)(f) => f(f(f(f(Z,a),b),c),d)
+
+("applies the function from the left")
+
+
+reduceRight(f) => f(a,f(b,f(c,d)))
+
+foldRight(Z)(f) => f(a,f(b,f(c,f(d,Z))))
+
+("applies the function from the right")
+
+1. As you see, fold and reduce are essentially the same, but fold starts with an outside element Z.
+2. Z may be added to the result an arbitrary number of times, not changing the result (e.g. Nil for list concatenation, 0 for addition, or 1 for multiplication)
+*/
+]]>
+</content>
+	<tabTrigger>type</tabTrigger>
+	<scope>source.scala</scope>
+	<description>fold-vs-reduce</description>
+</snippet>

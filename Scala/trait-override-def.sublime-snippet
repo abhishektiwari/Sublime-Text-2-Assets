@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+abstract  override def ${1:standardMethod} = ${2:use fields & methods}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>override trait abstract</description>
+</snippet>

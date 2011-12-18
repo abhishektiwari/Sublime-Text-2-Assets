@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:randomGen}.nextGaussian()
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<scope>source.scala</scope>
+	<description>random-nextGaussian</description>
+</snippet>

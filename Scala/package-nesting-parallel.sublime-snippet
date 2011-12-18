@@ -1,0 +1,27 @@
+<snippet>
+<content>
+<![CDATA[
+// From project root → src/main/scala/$1/$2/$3/$4.scala
+package ${1:com} {
+	package ${2:example} {
+		package ${3:mypackage} {
+			package ${4:mysubpackage} {
+				package ${5:mysubpackage1} {
+					$7
+				}
+				package ${6:mysubpackage2} {
+					$8
+				}
+			}
+
+		}
+	}
+}
+
+
+]]>
+</content>
+	<tabTrigger>package</tabTrigger>
+	<scope>source.scala</scope>
+	<description>package-nested-parallel</description>
+</snippet>

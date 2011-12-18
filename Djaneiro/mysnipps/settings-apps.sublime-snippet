@@ -1,0 +1,21 @@
+<snippet>
+<content>
+<![CDATA[
+'django.contrib.humanize',
+'registration',
+'guardian',
+'south',
+'taggit',
+'mailer',
+'djcelery',
+'tastypie',
+'notification',
+'pagination',
+'sorl.thumbnail',
+'emailconfirmation',
+]]>
+</content>
+    <tabTrigger>setting</tabTrigger>
+    <scope>source.python</scope>
+    <description>apps</description>
+</snippet>

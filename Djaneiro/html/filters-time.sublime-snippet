@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+time:"${1:H:i}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter time</description>
+</snippet>

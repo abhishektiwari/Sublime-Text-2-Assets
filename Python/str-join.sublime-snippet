@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:sep}.join(${2:iterable})
+]]>
+</content>
+	<tabTrigger>str</tabTrigger>
+	<scope>source.python</scope>
+	<description>Join</description>
+</snippet>

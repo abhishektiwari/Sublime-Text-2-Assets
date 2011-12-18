@@ -1,0 +1,17 @@
+<snippet>
+<content>
+<![CDATA[
+try { 
+	$1
+} catch {
+	case ${2:ioe}: ${3:IOException} => println($4) // more specific cases first !
+	${5:case ${6:e}: ${7:Exception} => println($8)}
+} finally {
+	$0
+}
+]]>
+</content>
+	<tabTrigger>try</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

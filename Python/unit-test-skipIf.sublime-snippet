@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+@unittest.skipIf(${1:condition},${2:reason})
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>skipIf</description>
+</snippet>

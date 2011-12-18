@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:object} = ${2:ModelName}.objects.get(${3:field_lookup})
+]]>
+</content>
+    <tabTrigger>query</tabTrigger>
+    <scope>source.python</scope>
+    <description>query-get</description>
+</snippet>

@@ -1,0 +1,255 @@
+<snippet>
+<content>
+<![CDATA[
+/*
+1. Pattern Matching As Functions
+
+list.filter(a => a match {
+	case s: String => true
+	case _ => false
+	}
+)
+
+is same as
+
+list.filter {
+	case s: String => true
+	case _ => false
+}
+
+2. Pattern Matching As Recursive
+
+def fibonacci(in: Int): Int = in match {
+	case 0 => 0
+	case 1 => 1
+	case n => fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+3. Sequence patterns
+
+A pattern that checks for a three-element list starting with zero
+
+expr match {
+	case List(0, _, _) => println("found it")
+	case _ =>
+}
+
+A pattern that matches any list that starts with zero
+
+expr match {
+	case List(0, _*) => println("found it")
+	case _ =>
+}
+
+
+def sumOdd(in: List[Int]): Int = in match {
+	case Nil => 0
+	case x :: rest if x % 2 == 1 => x + sumOdd(rest)
+	case _ :: rest => sumOdd(rest)
+}
+
+
+4. Tuple patterns
+
+A pattern like (a, b, c) matches an arbitrary 3-tuple
+
+def tupleDemo(expr: Any) = expr match {
+	case (a, b, c) => println("matched "+ a + b + c)
+	case _ =>
+}
+
+5. Typed patterns
+
+def generalSize(x: Any) = x match {
+	case s: String => s.length
+	case m: Map[_, _] => m.size
+	case _ => -1
+}
+
+Type erasure,
+
+def isIntIntMap(x: Any) = x match {
+	case m: Map[Int, Int] => true
+	case _ => false
+}
+
+6. Variable binding
+
+You simply write the variable name, an at sign (@), and then the pattern. This gives you a variable-binding pattern. The meaning of such a pattern is to perform the pattern match as normal, and if the pattern succeeds, set the variable to the matched object just as with a simple variable
+pattern.
+
+
+(a)
+You can easily extract the content:
+
+expr match {
+  case Some(x) => println(x)
+  case None =>
+}
+
+But what if you wanted not the content of Some, but the option itself? That would be accomplished with this:
+
+expr match {
+  case x @ Some(_) => println(x)
+  case None =>
+}
+
+(b)
+
+item match {
+	case (id, p @ Person(_, _, Manager)) => format("%s is overpaid.\n", p)
+	case (id, p @ Person(_, _, _)) => format("%s is underpaid.\n", p)
+}
+
+will print:
+
+Person(Alice,25,Developer) is underpaid.
+Person(Bob,32,Manager) is overpaid.
+Person(Charlie,32,Developer) is underpaid.
+
+
+item match {
+	case (id, p: Person) => p.role match {
+		case Manager => format("%s is overpaid.\n", p)
+		case _ => format("%s is underpaid.\n", p)
+	}
+}
+
+
+7. Pattern guards
+
+The if condition after the tuple is a guard. The guard is evaluated when matching, but only extracting any variables in the preceding part of the case. Guards provide additional granularity when constructing cases.
+
+tup match {
+	case (thingOne, thingTwo) if thingOne == "Good" => println("with 'Good'.")
+	case (thingOne, thingTwo) => println(thingOne + " and " + thingTwo)
+}
+
+8. Matching on Regular Expressions
+
+val BookExtractorRE = """Book: title=([^,]+),\s+authors=(.+)""".r
+val MagazineExtractorRE = """Magazine: title=([^,]+),\s+issue=(.+)""".r
+
+val catalog = List(
+"Book: title=Programming Scala, authors=Dean Wampler, Alex Payne",
+"Magazine: title=The New Yorker, issue=January 2009",
+"Book: title=War and Peace, authors=Leo Tolstoy",
+"Magazine: title=The Atlantic, issue=February 2009",
+"BadData: text=Who put this here??"
+)
+
+item match {
+	case BookExtractorRE(title, authors) => println(title,authors)
+	case MagazineExtractorRE(title, issue) => println(title, issue)
+	case entry => println("Unrecognized entry: " + entry)
+}
+
+9. Wildcard patterns
+
+Using _ to match anything
+
+expr match {
+	case BinOp(op, left, right) => println(expr +"is a binary operation")
+	case _ =>
+}
+
+10. Variable and Constant patterns
+
+def describe(x: Any) = x match {
+	case 5 => "five"
+	case true => "truth"
+	case "hello" => "hi!"
+	case Nil => "the empty list"
+	case _ => "something else"
+}
+
+expr match {
+	case 0 => "zero"
+	case somethingElse => "not zero: "+ somethingElse
+}
+
+11. Constructor patterns
+
+expr match {
+	case BinOp("+", e, Number(0)) => println("a deep match")
+	case _ =>
+}
+
+12. Command Line patterns
+
+def parseArgument(arg: String) = arg match {
+    case "-h" | "--help" => displayHelp
+    case "-v" | "--version" => displayVerion
+    case whatever => unknownArgument(whatever)
+  }
+
+13. Case class
+
+(a)
+
+sealed abstract class Expression
+case class X() extends Expression
+case class Const(value : Int) extends Expression
+case class Add(left : Expression, right : Expression) extends Expression
+case class Mult(left : Expression, right : Expression) extends Expression
+case class Neg(expr : Expression) extends Expression
+
+
+def eval(expression : Expression, xValue : Int) : Int = expression match {
+  case X() => xValue
+  case Const(cst) => cst
+  case Add(left, right) => eval(left, xValue) + eval(right, xValue)
+  case Mult(left, right) => eval(left, xValue) * eval(right, xValue)
+  case Neg(expr) => - eval(expr, xValue)
+}
+
+
+val expr = Add(Const(1), Mult(Const(2), Mult(X(), X())))  // 1 + 2 * X*X
+assert(eval(expr, 3) == 19)
+
+
+def deriv(expression : Expression) : Expression = expression match {
+  case X() => Const(1)
+  case Const(_) => Const(0)
+  case Add(left, right) => Add(deriv(left), deriv(right))
+  case Mult(left, right) => Add(Mult(deriv(left), right), Mult(left, deriv(right)))
+  case Neg(expr) => Neg(deriv(expr))
+}
+
+val df = deriv(expr)
+
+(b)
+
+class Color(val red:Int, val green:Int, val blue:Int)
+ 
+case class Red(r:Int) extends Color(r, 0, 0)
+case class Green(g:Int) extends Color(0, g, 0)
+case class Blue(b:Int) extends Color(0, 0, b)
+ 
+def printColor(c:Color) = c match {
+  case Red(v) => println("Red: " + v)
+  case Green(v) => println("Green: " + v)
+  case Blue(v) => println("Blue: " + v)
+ 
+  case col:Color => {
+    print("R: " + col.red + ", ")
+    print("G: " + col.green + ", ")
+    println("B: " + col.blue)
+  }
+ 
+  case null => println("Invalid color")
+}
+ 
+printColor(Red(100))
+printColor(Blue(220))
+ 
+printColor(new Color(100, 200, 50))
+printColor(null)
+
+*/
+]]>
+</content>
+	<tabTrigger>match</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

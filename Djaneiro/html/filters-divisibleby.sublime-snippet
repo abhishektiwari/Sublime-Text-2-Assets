@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+divisibleby:"${1:key}"
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter divisibleby</description>
+</snippet>

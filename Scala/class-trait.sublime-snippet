@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+trait ${1:TraitName} ${3:extends ${4:OtherClassOrTrait}} {
+	// This trait can only be mixed into a class that also extends $4
+	// No "class" parameters, add some methods or fields (& maintain state)
+
+	${0}
+}
+]]>
+</content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.scala</scope>
+	<description>trait</description>
+</snippet>

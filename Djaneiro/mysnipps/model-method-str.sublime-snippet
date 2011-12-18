@@ -1,0 +1,12 @@
+<snippet>
+<content>
+<![CDATA[
+def __str__(self):
+	"""Use django.utils.encoding.smart_str"""
+	return smart_str('${1:%s} ${2:%s}' % (self.${3:f1}, self.${4:f2}))
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-m-str</description>
+</snippet>

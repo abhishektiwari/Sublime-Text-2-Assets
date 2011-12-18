@@ -1,0 +1,16 @@
+<snippet>
+<content>
+<![CDATA[
+{% if messages %}
+<ul>
+	{% for message in messages %}
+		<li>{{ message }}</li>
+	{% endfor %}
+</ul>
+{% endif %}
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>user messages looped</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+sys.path
+${1:# list of strings that specifies the search path for modules}
+]]>
+</content>
+	<tabTrigger>sys</tabTrigger>
+	<scope>source.python</scope>
+	<description>path</description>
+</snippet>

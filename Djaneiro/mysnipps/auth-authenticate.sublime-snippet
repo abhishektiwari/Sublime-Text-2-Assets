@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:user} = authenticate(username=${2:user_name}, password=${3:secret})
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>user authenticate</description>
+</snippet>

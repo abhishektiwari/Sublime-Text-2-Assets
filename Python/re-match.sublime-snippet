@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object} = re.match(${2:pattern}, ${3:string}${4:, flags=0})
+${5:# zero or more char at start of string, return MatchObject or None}
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>re match</description>
+</snippet>

@@ -1,0 +1,69 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+What is Property function?
+The property function gives us a handy way to implement a simple descriptor without defining a separate class. 
+How Property works?
+Rather than create a complete class definition, we can write getter and setter method functions, and then bind these functions to an attribute name.
+What is Property design pattern?
+The Property design pattern has a number of method functions which are bound together with a single property name. The method functions can include any combination of a getter, a setter and a deleter.
+
+To create a property, we define the instance variable and the method functions for some combination of getting, setting and deleting an attribute value. This is identical with the Getter and Setter design pattern. To make a property, we provide these method functions to the property function to bind the various methods to an attribute name.
+
+Here's the definition of the property function.
+
+property( fget , fset , fdel , doc ) → property attribute
+
+Binds the given method functions into a property definition. This builds a descriptor object. Usually the result value is assigned to an attribute of a class.
+
+Ex-1: The following example shows a class definition with four method functions that are used to define two properties. 
+"""
+class Temperature( object ):
+	"""
+	>>> oven = Temperature()
+	>>> oven.celsius = 42
+	>>> oven.celsius
+	42.0
+	>>> oven.farenheit
+	107.6
+	>>> room = Temperature()
+	>>> room.farenheit = 120
+	>>> room.celsius
+	48.888888888888886
+	"""
+	def fget(self):
+		return self.celsius * 9 / 5 + 32
+	def fset(self, value):
+		self.celsius= (float(value)-32) * 5 / 9
+	farenheit= property(fget, fset)
+	def cset(self, value):
+		self.cTemp= float(value)
+	def cget(self):
+		return self.cTemp
+	celsius= property(cget, cset, doc="Celsius temperature")
+
+"""
+A property object has getter, setter, and deleter methods usable as decorators that create a copy of the property with the corresponding accessor function set to the decorated function.
+"""
+class Temperature(object):
+	@property
+	def farenheit(self):
+		return self.celsius * 9 / 5 + 32
+	@farenheit.setter
+	def farenheit(self, value):
+		self.celsius = (float(value)-32) * 5 / 9
+	@property
+	def celsius(self):
+		"""Celsius temperature"""
+		return self.cTemp
+	@celsius.setter
+	def celsius(self, value):
+		self.cTemp= float(value)
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<scope>source.python</scope>
+	<description>property</description>
+</snippet>
+

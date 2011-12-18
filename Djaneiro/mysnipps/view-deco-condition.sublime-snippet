@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+# Two functions for etag and last_modified required else None
+@condition(etag_func=${1:None}, last_modified_func=${2:None})
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator condition</description>
+</snippet>

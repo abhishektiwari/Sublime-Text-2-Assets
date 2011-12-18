@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+User.create_user(${2:username}, email=${3:None}, password=${4:None})
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>User create_user</description>
+</snippet>

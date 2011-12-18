@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+${1:NAME_OF}_CHOICES = (
+(u'${2:DB_VALUE}', u'${3:Display_Value}'),
+(u'$4', u'$5'),
+)
+]]>
+</content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.python</scope>
+    <description>model-field-choices</description>
+</snippet>

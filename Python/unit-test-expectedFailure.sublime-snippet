@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+@unittest.expectedFailure()
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>expectedFailure</description>
+</snippet>

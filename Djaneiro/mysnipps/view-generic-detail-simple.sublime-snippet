@@ -1,0 +1,14 @@
+<snippet>
+<content>
+<![CDATA[
+class ${1:ModelName}DetailView(DetailView):
+
+	context_object_name = "${2:model_name}_detail"
+	queryset = ${3:query_set}
+	template_name = "$2_detail.html"
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>Generic DetailView Simple</description>
+</snippet>

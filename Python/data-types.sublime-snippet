@@ -1,0 +1,23 @@
+<snippet>
+<content>
+<![CDATA[
+# Python’s built-in object types
+
+#                                              _______ Strings or Char
+#                                             |
+#                          __ Primitive ------|
+#                         |                   |_______ Numbers 
+#  Core object types -----|                    __ Sets
+#                         |__ Compound or     |
+#                             Collections or  |__ Sequences (strings, 
+#                             Containers      |   lists, tuples, bytes, 
+#                                             |   bytearray)
+#                                             |
+#                                             |__ Mappings (dictionary)
+
+]]>
+</content>
+	<tabTrigger>notes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

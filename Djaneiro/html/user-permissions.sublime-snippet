@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+perm
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>user perm</description>
+</snippet>

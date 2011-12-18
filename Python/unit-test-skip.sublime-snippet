@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+@unittest.skip(${1:reason})
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>skip</description>
+</snippet>

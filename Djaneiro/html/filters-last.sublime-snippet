@@ -1,0 +1,9 @@
+<snippet>
+<content>
+<![CDATA[
+last
+]]> </content>
+    <tabTrigger>filters</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>filter last</description>
+</snippet>

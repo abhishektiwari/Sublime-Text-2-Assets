@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:arrayName}.update(${2:index},${3:val})
+]]>
+</content>
+	<tabTrigger>array</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

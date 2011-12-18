@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+return HttpResponseRedirect('${1:/my/url/}')
+]]>
+</content>
+    <tabTrigger>redirect</tabTrigger>
+    <scope>source.python</scope>
+    <description>redirect http</description>
+</snippet>

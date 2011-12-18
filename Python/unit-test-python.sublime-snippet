@@ -1,0 +1,30 @@
+<snippet>
+<content>
+<![CDATA[
+import unittest
+from django.utils import unittest
+import ${1:module}
+
+class ${2:Name}TestCase(unittest.TestCase):
+	def setUp(self):
+		self.${3:data} = ${4:value} 
+
+	def tearDown(self):
+		self.$3 = None
+		# del self.$3
+		$5
+
+	def test_${6:method1}(self):
+		$7
+
+	def test_${8:method2}(self):
+		$9
+
+if __name__ == '__main__':
+	unittest.main()
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>unit test python</description>
+</snippet>

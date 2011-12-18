@@ -1,7 +1,7 @@
 <snippet>
 <content>
 <![CDATA[
-exec('${1:statements to evaluate}'')
+exec('${1:statements to evaluate}')
 ]]>
 </content>
 	<tabTrigger>exec</tabTrigger>

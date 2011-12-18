@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.islink(${1:path})
+${2:# can get path using os.getcwd}
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>islink</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+${1:import scala.collection.immutable.Queue}
+val ${2:my_queue} = Queue[${3:type}]()
+]]>
+</content>
+	<tabTrigger>queue</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+    <content><![CDATA[${1:FIELDNAME} = models.ForeignKey(${2:ModelName}, related_name = "${3:r_name}", verbose_name="${4:v_name}"$5)]]></content>
+    <tabTrigger>fk</tabTrigger>
+    <scope>source.python</scope>
+    <description>ForeignKey full</description>
+</snippet>

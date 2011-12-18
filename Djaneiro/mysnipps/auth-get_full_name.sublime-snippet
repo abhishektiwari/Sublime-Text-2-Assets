@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:user}.get_full_name()
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>user get_full_name</description>
+</snippet>

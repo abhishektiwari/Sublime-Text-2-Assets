@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:request}.user
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>request user</description>
+</snippet>

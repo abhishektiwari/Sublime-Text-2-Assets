@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:myurl}/$0
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>url-regex</description>
+</snippet>

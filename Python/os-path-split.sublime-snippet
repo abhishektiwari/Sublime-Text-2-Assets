@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.split(${1:path})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path split</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:randomGen}.nextPrintableChar()
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<scope>source.scala</scope>
+	<description>random-nextPrintableChar</description>
+</snippet>

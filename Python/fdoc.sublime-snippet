@@ -1,0 +1,13 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+${1:Enter documentation}
+"""
+$0
+]]>
+</content>
+	<tabTrigger>doc</tabTrigger>
+	<scope>source.python</scope>
+	<description>Docstring</description>
+</snippet>

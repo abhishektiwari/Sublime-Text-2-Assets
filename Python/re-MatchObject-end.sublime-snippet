@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:match_object}.end(${2:groupid})
+]]>
+</content>
+	<tabTrigger>re</tabTrigger>
+	<scope>source.python</scope>
+	<description>MatchObject end</description>
+</snippet>

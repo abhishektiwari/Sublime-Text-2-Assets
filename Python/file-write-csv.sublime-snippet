@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+writer = csv.writer(${1:file_object}${2:, dialect='${3:excel}'})
+writer.writerow($0)
+]]>
+</content>
+	<tabTrigger>file</tabTrigger>
+	<scope>source.python</scope>
+	<description>csv writer</description>
+</snippet>

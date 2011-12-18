@@ -1,0 +1,21 @@
+<snippet>
+<content>
+<![CDATA[
+
+Function literal: 
+A function with no name in Scala source code, specified
+with function literal syntax. For example, (x: Int, y: Int) => x + y.
+
+Predicate:
+A function literal (or function) can be called a predicate if its result type is Boolean.
+
+Call-by name:
+In order to make something call-by-name, just put => before the type. 
+So, foo(s: String) is call-by-reference, and foo(s: => String) is call-by-name.
+
+]]>
+</content>
+	<tabTrigger>def</tabTrigger>
+	<scope>source.scala</scope>
+	<description>notes</description>
+</snippet>

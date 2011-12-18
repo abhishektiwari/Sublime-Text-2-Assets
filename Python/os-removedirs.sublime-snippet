@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+os.removedirs(${1:path})
+${2:#Recursive directory-removal}
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>removedirs</description>
+</snippet>

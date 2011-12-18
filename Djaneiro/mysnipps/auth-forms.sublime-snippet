@@ -1,0 +1,20 @@
+<snippet>
+<content>
+<![CDATA[
+"""
+import django.contrib.auth.forms to use following forms:
+
+1. AdminPasswordChangeForm
+2. AuthenticationForm
+3. PasswordChangeForm
+4. PasswordResetForm
+5. SetPasswordForm
+6. UserChangeForm
+7. UserCreationForm
+"""
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>auth in-built forms</description>
+</snippet>

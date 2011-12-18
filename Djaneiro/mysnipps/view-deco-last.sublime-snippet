@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+# Requires a last_modified function else None
+@last_modified(last_modified_func=${1:None})
+]]>
+</content>
+    <tabTrigger>view</tabTrigger>
+    <scope>source.python</scope>
+    <description>view decorator last_modified</description>
+</snippet>

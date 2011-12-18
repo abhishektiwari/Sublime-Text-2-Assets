@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:(?P<${2:my_url}>\\${3:w+|d+|w\{n\}|d\{n\}})/}
+]]>
+</content>
+    <tabTrigger>urls</tabTrigger>
+    <scope>source.python</scope>
+    <description>url-regex-named-args</description>
+</snippet>

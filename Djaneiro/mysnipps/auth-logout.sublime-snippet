@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+logout(request)
+]]>
+</content>
+    <tabTrigger>auth</tabTrigger>
+    <scope>source.python</scope>
+    <description>user logout</description>
+</snippet>

@@ -8,6 +8,6 @@ def ${1:method}(${2:${4:arg}: ${5:type}${6:, ${7:arg}: ${8:type}}})${9:: ${10:ty
 ]]>
 </content>
 	<tabTrigger>class</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.scala</scope>
+	<description>def</description>
 </snippet>

@@ -1,11 +1,10 @@
 <snippet>
 <content>
 <![CDATA[
-Int | String | Float | Boolean | Long
-}
+Int | String | Float | Boolean | Long | Any
 ]]>
 </content>
 	<tabTrigger>type</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.scala</scope>
+	<description>type</description>
 </snippet>

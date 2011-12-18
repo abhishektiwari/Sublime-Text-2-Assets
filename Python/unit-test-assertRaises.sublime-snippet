@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+self.assertRaises(${1:exception}, ${2:fun}${3:, *args, **kwds})
+]]>
+</content>
+	<tabTrigger>unit</tabTrigger>
+	<scope>source.python</scope>
+	<description>assertRaises(a, b)</description>
+</snippet>

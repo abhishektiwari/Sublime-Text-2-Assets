@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.environ['${1:ENVNAME}'] = 'value'
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>set os.environ</description>
+</snippet>

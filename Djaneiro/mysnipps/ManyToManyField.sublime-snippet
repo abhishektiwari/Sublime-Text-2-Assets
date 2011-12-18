@@ -1,0 +1,7 @@
+<!-- See http://www.sublimetext.com/docs/snippets for more information -->
+<snippet>
+    <content><![CDATA[${1:FIELDNAME} = models.ManyToManyField(${2:ModelName}, verbose_name="${3:v_name}"$4)]]></content>
+    <tabTrigger>m2m</tabTrigger>
+    <scope>source.python</scope>
+    <description>ManyToManyField full</description>
+</snippet>

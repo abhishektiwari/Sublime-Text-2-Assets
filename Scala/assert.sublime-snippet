@@ -1,0 +1,11 @@
+<snippet>
+<content>
+<![CDATA[
+assert(${1:test})
+// gives AssertionError
+]]>
+</content>
+	<tabTrigger>assert</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

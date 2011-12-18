@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+def __next__(self):
+	"""
+	Invoked by next(self) method.
+	"""
+	$0
+]]>
+</content>
+	<tabTrigger>overload</tabTrigger>
+	<scope>source.python</scope>
+	<description>seq __next__ py3</description>
+</snippet>
+

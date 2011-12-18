@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+any(${1:iterable})
+]]>
+</content>
+	<tabTrigger>iterable</tabTrigger>
+	<scope>source.python</scope>
+	<description>any truth</description>
+</snippet>

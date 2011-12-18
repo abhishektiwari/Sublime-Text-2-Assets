@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+os.path.join(${1:part1}, ${2:part2})
+]]>
+</content>
+	<tabTrigger>os</tabTrigger>
+	<scope>source.python</scope>
+	<description>path join</description>
+</snippet>

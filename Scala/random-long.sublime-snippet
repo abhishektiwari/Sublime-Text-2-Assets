@@ -1,0 +1,10 @@
+<snippet>
+<content>
+<![CDATA[
+${1:randomGen}.nextLong()
+]]>
+</content>
+	<tabTrigger>random</tabTrigger>
+	<scope>source.scala</scope>
+	<description>random-nextLong</description>
+</snippet>
